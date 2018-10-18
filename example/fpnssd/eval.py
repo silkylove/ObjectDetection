@@ -34,7 +34,6 @@ def transform(img, boxes, labels):
         transforms.Normalize((0.485, 0.456, 0.406),
                              (0.229, 0.224, 0.225))
     ])(img)
-    boxes, labels = box_coder.encode(boxes, labels)
     return img, boxes, labels
 
 
@@ -43,7 +42,7 @@ box_coder = SSDBboxCoder(net)
 dataset = ObjDetDataset(root='/home/yhuangcc/data/voc(07+12)/JPEGImages/', \
                         list_file='/home/yhuangcc/ObjectDetection/datasets/voc/voc07_test.txt',
                         transform=transform)
-dataloader = DataLoader(dataset, batch_size=64, shuffle=False, num_workers=8)
+dataloader = DataLoader(dataset, batch_size=1, shuffle=False, num_workers=4, pin_memory=True)
 
 # box_coder.anchor_boxes = box_coder.anchor_boxes.cuda(3)
 pred_boxes = []
@@ -62,29 +61,26 @@ with open('/home/yhuangcc/ObjectDetection/datasets/voc/voc07_test_difficult.txt'
 
 def eval(net, dataloader):
     with torch.no_grad():
-        idx = 0
-        for i, (inputs, _, _) in enumerate(dataloader):
-            print('%d/%d' % (i, len(dataloader)))
+        for i, (inputs, box_targets, label_targets) in enumerate(dataloader):
+            if i % 1000 == 0:
+                print('%d/%d' % (i, len(dataloader)))
+            gt_boxes.append(box_targets.squeeze(0))
+            gt_labels.append(label_targets.squeeze(0))
 
             loc_preds, cls_preds = net(inputs.cuda(1))
-            for j in range(inputs.size(0)):
-                box_preds, label_preds, score_preds = box_coder.decode(
-                    loc_preds[j].cpu().data.squeeze(),
-                    F.softmax(cls_preds[j].cpu().data.squeeze(), dim=1),
-                    score_thresh=0.01)
-                pred_boxes.append(box_preds)
-                pred_labels.append(label_preds)
-                pred_scores.append(score_preds)
+            box_preds, label_preds, score_preds = box_coder.decode(
+                loc_preds.cpu().data.squeeze(),
+                F.softmax(cls_preds.squeeze(), dim=1).cpu().data,
+                score_thresh=0.01)
 
-            for j in range(idx, idx + inputs.size(0)):
-                gt_boxes.append(torch.FloatTensor(dataset.boxes[j]))
-                gt_labels.append(torch.LongTensor(dataset.labels[j]))
+            pred_boxes.append(box_preds)
+            pred_labels.append(label_preds)
+            pred_scores.append(score_preds)
 
-            idx += inputs.size(0)
-    return voc_eval(pred_boxes, pred_labels, pred_scores,
-                    gt_boxes, gt_labels, gt_difficults,
-                    iou_thresh=0.5, use_07_metric=True)
-
+    return voc_eval(
+        pred_boxes, pred_labels, pred_scores,
+        gt_boxes, gt_labels, gt_difficults,
+        iou_thresh=0.5, use_07_metric=True)
 
 print('Start to eval...')
 start = time.time()
