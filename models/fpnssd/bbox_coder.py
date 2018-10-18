@@ -79,12 +79,12 @@ class SSDBboxCoder:
             mask = score > score_thresh
             if not mask.any():
                 continue
-            box = box_preds[mask.nonzero().squeeze()]
+            box = box_preds[mask]
             score = score[mask]
 
             keep = bbox_nms(box, score, nms_thresh)
             boxes.append(box[keep])
-            labels.append(torch.LongTensor(len(box[keep])).fill_(i))
+            labels.append(torch.empty_like(keep).fill_(i))
             scores.append(score[keep])
 
         boxes = torch.cat(boxes, 0)
