@@ -16,6 +16,7 @@ class Bottleneck(nn.Module):
         self.bn2 = nn.BatchNorm2d(planes)
         self.conv3 = nn.Conv2d(planes, self.expansion * planes, kernel_size=1, bias=False)
         self.bn3 = nn.BatchNorm2d(self.expansion * planes)
+        self.relu=nn.ReLU(inplace=True)
 
         self.downsample = nn.Sequential()
         if stride != 1 or in_planes != self.expansion * planes:
@@ -25,11 +26,11 @@ class Bottleneck(nn.Module):
             )
 
     def forward(self, x):
-        out = F.relu(self.bn1(self.conv1(x)))
-        out = F.relu(self.bn2(self.conv2(out)))
+        out = self.relu(self.bn1(self.conv1(x)))
+        out = self.relu(self.bn2(self.conv2(out)))
         out = self.bn3(self.conv3(out))
         out += self.downsample(x)
-        out = F.relu(out)
+        out = self.relu(out)
         return out
 
 
@@ -40,6 +41,7 @@ class FPN(nn.Module):
 
         self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3, bias=False)
         self.bn1 = nn.BatchNorm2d(64)
+        self.relu=nn.ReLU(inplace=True)
 
         # Bottom-up layers
         self.layer1 = self._make_layer(block, 64, num_blocks[0], stride=1)
@@ -91,16 +93,16 @@ class FPN(nn.Module):
 
     def forward(self, x):
         # Bottom-up
-        c1 = F.relu(self.bn1(self.conv1(x)))
+        c1 = self.relu(self.bn1(self.conv1(x)))
         c1 = F.max_pool2d(c1, kernel_size=3, stride=2, padding=1)
         c2 = self.layer1(c1)
         c3 = self.layer2(c2)
         c4 = self.layer3(c3)
         c5 = self.layer4(c4)
         p6 = self.conv6(c5)
-        p7 = self.conv7(F.relu(p6))
-        p8 = self.conv8(F.relu(p7))
-        p9 = self.conv9(F.relu(p8))
+        p7 = self.conv7(self.relu(p6))
+        p8 = self.conv8(self.relu(p7))
+        p9 = self.conv9(self.relu(p8))
         # Top-down
         p5 = self.toplayer(c5)
         p4 = self._upsample_add(p5, self.latlayer1(c4))
