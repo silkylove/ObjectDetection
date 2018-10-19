@@ -62,7 +62,7 @@ with open('/home/yhuangcc/ObjectDetection/datasets/voc/voc07_test_difficult.txt'
 def eval(net, dataloader):
     with torch.no_grad():
         for i, (inputs, box_targets, label_targets) in enumerate(dataloader):
-            if i % 1000 == 0:
+            if i % 500 == 0:
                 print('%d/%d' % (i, len(dataloader)))
             gt_boxes.append(box_targets.squeeze(0))
             gt_labels.append(label_targets.squeeze(0))
@@ -83,6 +83,7 @@ def eval(net, dataloader):
         iou_thresh=0.5, use_07_metric=True)
 
 
+# the eval time should be around 700s
 print('Start to eval...')
 start = time.time()
 result = eval(net, dataloader)
