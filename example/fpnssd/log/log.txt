@@ -1,0 +1,831 @@
+2018-10-19 00:10:59,733 - InfoLog - INFO - ***START TRAINING FPNSSD MODEL***
+2018-10-19 00:11:06,056 - InfoLog - INFO - Epoch :0
+2018-10-19 00:11:23,654 - InfoLog - INFO - Train: [0/462] | Time: 0m 17s | loc_loss: 2.9475 | cls_loss:13.8816 | Loss: 16.8291
+2018-10-19 00:12:30,855 - InfoLog - INFO - Train: [100/462] | Time: 1m 24s | loc_loss: 2.5836 | cls_loss:4.8348 | Loss: 9.3290
+2018-10-19 00:13:55,115 - InfoLog - INFO - Train: [200/462] | Time: 2m 49s | loc_loss: 2.2645 | cls_loss:4.3548 | Loss: 8.1993
+2018-10-19 00:15:09,514 - InfoLog - INFO - Train: [300/462] | Time: 4m 3s | loc_loss: 2.1766 | cls_loss:4.3006 | Loss: 7.6598
+2018-10-19 00:16:26,626 - InfoLog - INFO - Train: [400/462] | Time: 5m 20s | loc_loss: 1.8353 | cls_loss:3.7958 | Loss: 7.2659
+2018-10-19 00:17:11,765 - InfoLog - INFO - Test starts...
+2018-10-19 00:17:41,970 - InfoLog - INFO - Test: [103/104] | Time: 6m 35s | loc_loss: 1.8024 | cls_loss:3.7488 | Loss: 5.7581
+2018-10-19 00:17:42,560 - InfoLog - INFO - ***Saving model***
+2018-10-19 00:17:42,562 - InfoLog - INFO - Epoch :1
+2018-10-19 00:17:50,413 - InfoLog - INFO - Train: [0/462] | Time: 6m 44s | loc_loss: 1.8963 | cls_loss:3.7339 | Loss: 5.6302
+2018-10-19 00:19:06,193 - InfoLog - INFO - Train: [100/462] | Time: 8m 0s | loc_loss: 1.7722 | cls_loss:3.7383 | Loss: 5.5417
+2018-10-19 00:20:24,152 - InfoLog - INFO - Train: [200/462] | Time: 9m 18s | loc_loss: 1.7244 | cls_loss:3.4982 | Loss: 5.4057
+2018-10-19 00:21:38,615 - InfoLog - INFO - Train: [300/462] | Time: 10m 32s | loc_loss: 1.6541 | cls_loss:3.3942 | Loss: 5.2867
+2018-10-19 00:22:56,289 - InfoLog - INFO - Train: [400/462] | Time: 11m 50s | loc_loss: 1.6145 | cls_loss:3.1153 | Loss: 5.1978
+2018-10-19 00:23:40,626 - InfoLog - INFO - Test starts...
+2018-10-19 00:24:10,156 - InfoLog - INFO - Test: [103/104] | Time: 13m 4s | loc_loss: 1.4537 | cls_loss:3.0660 | Loss: 4.7471
+2018-10-19 00:24:10,668 - InfoLog - INFO - ***Saving model***
+2018-10-19 00:24:10,669 - InfoLog - INFO - Epoch :2
+2018-10-19 00:24:19,192 - InfoLog - INFO - Train: [0/462] | Time: 13m 13s | loc_loss: 1.4493 | cls_loss:3.3175 | Loss: 4.7668
+2018-10-19 00:25:35,592 - InfoLog - INFO - Train: [100/462] | Time: 14m 29s | loc_loss: 1.5640 | cls_loss:3.1826 | Loss: 4.7101
+2018-10-19 00:26:52,052 - InfoLog - INFO - Train: [200/462] | Time: 15m 45s | loc_loss: 1.3699 | cls_loss:2.9410 | Loss: 4.6715
+2018-10-19 00:28:08,400 - InfoLog - INFO - Train: [300/462] | Time: 17m 2s | loc_loss: 1.5942 | cls_loss:3.2178 | Loss: 4.6327
+2018-10-19 00:29:23,535 - InfoLog - INFO - Train: [400/462] | Time: 18m 17s | loc_loss: 1.4487 | cls_loss:2.7864 | Loss: 4.5966
+2018-10-19 00:30:12,531 - InfoLog - INFO - Test starts...
+2018-10-19 00:30:42,276 - InfoLog - INFO - Test: [103/104] | Time: 19m 36s | loc_loss: 1.4090 | cls_loss:3.0154 | Loss: 4.3498
+2018-10-19 00:30:43,048 - InfoLog - INFO - ***Saving model***
+2018-10-19 00:30:43,048 - InfoLog - INFO - Epoch :3
+2018-10-19 00:30:51,184 - InfoLog - INFO - Train: [0/462] | Time: 19m 45s | loc_loss: 1.6143 | cls_loss:3.0312 | Loss: 4.6455
+2018-10-19 00:32:06,204 - InfoLog - INFO - Train: [100/462] | Time: 21m 0s | loc_loss: 1.4677 | cls_loss:2.9155 | Loss: 4.3131
+2018-10-19 00:33:25,973 - InfoLog - INFO - Train: [200/462] | Time: 22m 19s | loc_loss: 1.2005 | cls_loss:2.5165 | Loss: 4.3264
+2018-10-19 00:34:41,171 - InfoLog - INFO - Train: [300/462] | Time: 23m 35s | loc_loss: 1.2963 | cls_loss:2.8529 | Loss: 4.3191
+2018-10-19 00:36:00,462 - InfoLog - INFO - Train: [400/462] | Time: 24m 54s | loc_loss: 1.2361 | cls_loss:2.6030 | Loss: 4.2988
+2018-10-19 00:36:47,105 - InfoLog - INFO - Test starts...
+2018-10-19 00:37:17,541 - InfoLog - INFO - Test: [103/104] | Time: 26m 11s | loc_loss: 1.3641 | cls_loss:2.9989 | Loss: 4.2196
+2018-10-19 00:37:18,056 - InfoLog - INFO - ***Saving model***
+2018-10-19 00:37:18,057 - InfoLog - INFO - Epoch :4
+2018-10-19 00:37:26,684 - InfoLog - INFO - Train: [0/462] | Time: 26m 20s | loc_loss: 1.1757 | cls_loss:2.7238 | Loss: 3.8994
+2018-10-19 00:38:42,322 - InfoLog - INFO - Train: [100/462] | Time: 27m 36s | loc_loss: 1.4124 | cls_loss:2.9038 | Loss: 4.1154
+2018-10-19 00:39:58,126 - InfoLog - INFO - Train: [200/462] | Time: 28m 52s | loc_loss: 1.1841 | cls_loss:2.7124 | Loss: 4.1438
+2018-10-19 00:41:16,610 - InfoLog - INFO - Train: [300/462] | Time: 30m 10s | loc_loss: 1.4378 | cls_loss:2.8907 | Loss: 4.1391
+2018-10-19 00:42:32,267 - InfoLog - INFO - Train: [400/462] | Time: 31m 26s | loc_loss: 1.3733 | cls_loss:2.8944 | Loss: 4.1257
+2018-10-19 00:43:18,781 - InfoLog - INFO - Test starts...
+2018-10-19 00:43:48,516 - InfoLog - INFO - Test: [103/104] | Time: 32m 42s | loc_loss: 1.1916 | cls_loss:2.8509 | Loss: 4.0131
+2018-10-19 00:43:49,036 - InfoLog - INFO - ***Saving model***
+2018-10-19 00:43:49,036 - InfoLog - INFO - Epoch :5
+2018-10-19 00:43:57,238 - InfoLog - INFO - Train: [0/462] | Time: 32m 51s | loc_loss: 1.0970 | cls_loss:2.4686 | Loss: 3.5656
+2018-10-19 00:45:12,750 - InfoLog - INFO - Train: [100/462] | Time: 34m 6s | loc_loss: 1.1831 | cls_loss:2.5969 | Loss: 4.0262
+2018-10-19 00:46:30,287 - InfoLog - INFO - Train: [200/462] | Time: 35m 24s | loc_loss: 1.2332 | cls_loss:2.6591 | Loss: 4.0031
+2018-10-19 00:47:46,780 - InfoLog - INFO - Train: [300/462] | Time: 36m 40s | loc_loss: 1.1595 | cls_loss:2.6147 | Loss: 3.9956
+2018-10-19 00:49:03,639 - InfoLog - INFO - Train: [400/462] | Time: 37m 57s | loc_loss: 1.3989 | cls_loss:2.7452 | Loss: 3.9744
+2018-10-19 00:49:48,204 - InfoLog - INFO - Test starts...
+2018-10-19 00:50:17,615 - InfoLog - INFO - Test: [103/104] | Time: 39m 11s | loc_loss: 1.2140 | cls_loss:2.7378 | Loss: 3.9607
+2018-10-19 00:50:18,121 - InfoLog - INFO - ***Saving model***
+2018-10-19 00:50:18,122 - InfoLog - INFO - Epoch :6
+2018-10-19 00:50:27,101 - InfoLog - INFO - Train: [0/462] | Time: 39m 21s | loc_loss: 1.2213 | cls_loss:2.5083 | Loss: 3.7296
+2018-10-19 00:51:42,199 - InfoLog - INFO - Train: [100/462] | Time: 40m 36s | loc_loss: 1.0890 | cls_loss:2.7278 | Loss: 3.8881
+2018-10-19 00:52:59,494 - InfoLog - INFO - Train: [200/462] | Time: 41m 53s | loc_loss: 1.4515 | cls_loss:2.6039 | Loss: 3.8717
+2018-10-19 00:54:14,635 - InfoLog - INFO - Train: [300/462] | Time: 43m 8s | loc_loss: 1.1767 | cls_loss:2.6428 | Loss: 3.8673
+2018-10-19 00:55:34,411 - InfoLog - INFO - Train: [400/462] | Time: 44m 28s | loc_loss: 1.2758 | cls_loss:2.7275 | Loss: 3.8708
+2018-10-19 00:56:20,335 - InfoLog - INFO - Test starts...
+2018-10-19 00:56:51,378 - InfoLog - INFO - Test: [103/104] | Time: 45m 45s | loc_loss: 1.2014 | cls_loss:2.7894 | Loss: 3.8278
+2018-10-19 00:56:51,893 - InfoLog - INFO - ***Saving model***
+2018-10-19 00:56:51,894 - InfoLog - INFO - Epoch :7
+2018-10-19 00:57:00,749 - InfoLog - INFO - Train: [0/462] | Time: 45m 54s | loc_loss: 1.1729 | cls_loss:2.4669 | Loss: 3.6398
+2018-10-19 00:58:19,431 - InfoLog - INFO - Train: [100/462] | Time: 47m 13s | loc_loss: 1.0208 | cls_loss:2.8010 | Loss: 3.8573
+2018-10-19 00:59:39,800 - InfoLog - INFO - Train: [200/462] | Time: 48m 33s | loc_loss: 1.0088 | cls_loss:2.3312 | Loss: 3.8181
+2018-10-19 01:00:54,163 - InfoLog - INFO - Train: [300/462] | Time: 49m 48s | loc_loss: 1.1847 | cls_loss:2.5485 | Loss: 3.8078
+2018-10-19 01:02:14,507 - InfoLog - INFO - Train: [400/462] | Time: 51m 8s | loc_loss: 1.2466 | cls_loss:2.5382 | Loss: 3.7929
+2018-10-19 01:02:59,193 - InfoLog - INFO - Test starts...
+2018-10-19 01:03:28,754 - InfoLog - INFO - Test: [103/104] | Time: 52m 22s | loc_loss: 1.1868 | cls_loss:2.8235 | Loss: 3.8470
+2018-10-19 01:03:28,754 - InfoLog - INFO - Epoch :8
+2018-10-19 01:03:36,437 - InfoLog - INFO - Train: [0/462] | Time: 52m 30s | loc_loss: 1.1112 | cls_loss:2.4987 | Loss: 3.6099
+2018-10-19 01:04:52,473 - InfoLog - INFO - Train: [100/462] | Time: 53m 46s | loc_loss: 1.0706 | cls_loss:2.5383 | Loss: 3.7435
+2018-10-19 01:06:07,010 - InfoLog - INFO - Train: [200/462] | Time: 55m 0s | loc_loss: 1.2700 | cls_loss:2.5500 | Loss: 3.7304
+2018-10-19 01:07:24,420 - InfoLog - INFO - Train: [300/462] | Time: 56m 18s | loc_loss: 1.1225 | cls_loss:2.4243 | Loss: 3.7279
+2018-10-19 01:08:41,242 - InfoLog - INFO - Train: [400/462] | Time: 57m 35s | loc_loss: 1.1513 | cls_loss:2.4024 | Loss: 3.7169
+2018-10-19 01:09:33,634 - InfoLog - INFO - Test starts...
+2018-10-19 01:10:03,230 - InfoLog - INFO - Test: [103/104] | Time: 58m 57s | loc_loss: 1.1664 | cls_loss:2.7731 | Loss: 3.7395
+2018-10-19 01:10:03,731 - InfoLog - INFO - ***Saving model***
+2018-10-19 01:10:03,732 - InfoLog - INFO - Epoch :9
+2018-10-19 01:10:12,385 - InfoLog - INFO - Train: [0/462] | Time: 59m 6s | loc_loss: 1.1321 | cls_loss:2.4141 | Loss: 3.5462
+2018-10-19 01:11:27,474 - InfoLog - INFO - Train: [100/462] | Time: 60m 21s | loc_loss: 1.1653 | cls_loss:2.2619 | Loss: 3.6213
+2018-10-19 01:12:44,883 - InfoLog - INFO - Train: [200/462] | Time: 61m 38s | loc_loss: 1.1008 | cls_loss:2.5908 | Loss: 3.6084
+2018-10-19 01:14:04,200 - InfoLog - INFO - Train: [300/462] | Time: 62m 58s | loc_loss: 1.0993 | cls_loss:2.3420 | Loss: 3.6265
+2018-10-19 01:15:18,791 - InfoLog - INFO - Train: [400/462] | Time: 64m 12s | loc_loss: 1.2234 | cls_loss:2.5322 | Loss: 3.6296
+2018-10-19 01:16:06,023 - InfoLog - INFO - Test starts...
+2018-10-19 01:16:35,838 - InfoLog - INFO - Test: [103/104] | Time: 65m 29s | loc_loss: 1.0847 | cls_loss:2.7591 | Loss: 3.6407
+2018-10-19 01:16:36,281 - InfoLog - INFO - ***Saving model***
+2018-10-19 01:16:36,282 - InfoLog - INFO - Epoch :10
+2018-10-19 01:16:44,658 - InfoLog - INFO - Train: [0/462] | Time: 65m 38s | loc_loss: 1.1117 | cls_loss:2.7561 | Loss: 3.8679
+2018-10-19 01:18:01,118 - InfoLog - INFO - Train: [100/462] | Time: 66m 55s | loc_loss: 1.1493 | cls_loss:2.4115 | Loss: 3.5818
+2018-10-19 01:19:21,439 - InfoLog - INFO - Train: [200/462] | Time: 68m 15s | loc_loss: 0.9010 | cls_loss:2.5485 | Loss: 3.5719
+2018-10-19 01:20:35,908 - InfoLog - INFO - Train: [300/462] | Time: 69m 29s | loc_loss: 1.1447 | cls_loss:2.6459 | Loss: 3.5659
+2018-10-19 01:21:53,080 - InfoLog - INFO - Train: [400/462] | Time: 70m 47s | loc_loss: 0.9781 | cls_loss:2.4099 | Loss: 3.5562
+2018-10-19 01:22:38,462 - InfoLog - INFO - Test starts...
+2018-10-19 01:23:09,254 - InfoLog - INFO - Test: [103/104] | Time: 72m 3s | loc_loss: 1.1004 | cls_loss:2.7989 | Loss: 3.6177
+2018-10-19 01:23:09,827 - InfoLog - INFO - ***Saving model***
+2018-10-19 01:23:09,827 - InfoLog - INFO - Epoch :11
+2018-10-19 01:23:18,217 - InfoLog - INFO - Train: [0/462] | Time: 72m 12s | loc_loss: 1.2448 | cls_loss:2.5051 | Loss: 3.7498
+2018-10-19 01:24:32,869 - InfoLog - INFO - Train: [100/462] | Time: 73m 26s | loc_loss: 1.1046 | cls_loss:2.5188 | Loss: 3.4822
+2018-10-19 01:25:51,350 - InfoLog - INFO - Train: [200/462] | Time: 74m 45s | loc_loss: 1.1887 | cls_loss:2.3410 | Loss: 3.4937
+2018-10-19 01:27:09,080 - InfoLog - INFO - Train: [300/462] | Time: 76m 3s | loc_loss: 1.1476 | cls_loss:2.2938 | Loss: 3.4955
+2018-10-19 01:28:26,292 - InfoLog - INFO - Train: [400/462] | Time: 77m 20s | loc_loss: 1.2523 | cls_loss:2.7329 | Loss: 3.5206
+2018-10-19 01:29:13,191 - InfoLog - INFO - Test starts...
+2018-10-19 01:29:42,558 - InfoLog - INFO - Test: [103/104] | Time: 78m 36s | loc_loss: 1.0857 | cls_loss:2.9135 | Loss: 3.5726
+2018-10-19 01:29:43,008 - InfoLog - INFO - ***Saving model***
+2018-10-19 01:29:43,009 - InfoLog - INFO - Epoch :12
+2018-10-19 01:29:51,489 - InfoLog - INFO - Train: [0/462] | Time: 78m 45s | loc_loss: 1.0658 | cls_loss:2.5136 | Loss: 3.5794
+2018-10-19 01:31:07,179 - InfoLog - INFO - Train: [100/462] | Time: 80m 1s | loc_loss: 1.1829 | cls_loss:2.4933 | Loss: 3.4513
+2018-10-19 01:32:25,925 - InfoLog - INFO - Train: [200/462] | Time: 81m 19s | loc_loss: 1.1265 | cls_loss:2.4768 | Loss: 3.4805
+2018-10-19 01:33:40,279 - InfoLog - INFO - Train: [300/462] | Time: 82m 34s | loc_loss: 0.9734 | cls_loss:2.6314 | Loss: 3.4682
+2018-10-19 01:34:55,971 - InfoLog - INFO - Train: [400/462] | Time: 83m 49s | loc_loss: 0.9078 | cls_loss:2.1936 | Loss: 3.4657
+2018-10-19 01:35:44,174 - InfoLog - INFO - Test starts...
+2018-10-19 01:36:13,776 - InfoLog - INFO - Test: [103/104] | Time: 85m 7s | loc_loss: 1.1298 | cls_loss:2.8336 | Loss: 3.6820
+2018-10-19 01:36:13,777 - InfoLog - INFO - Epoch :13
+2018-10-19 01:36:22,862 - InfoLog - INFO - Train: [0/462] | Time: 85m 16s | loc_loss: 1.0283 | cls_loss:2.6245 | Loss: 3.6528
+2018-10-19 01:37:37,292 - InfoLog - INFO - Train: [100/462] | Time: 86m 31s | loc_loss: 0.9444 | cls_loss:2.1769 | Loss: 3.4507
+2018-10-19 01:38:59,976 - InfoLog - INFO - Train: [200/462] | Time: 87m 53s | loc_loss: 1.0889 | cls_loss:2.3985 | Loss: 3.4246
+2018-10-19 01:40:33,781 - InfoLog - INFO - Train: [300/462] | Time: 89m 27s | loc_loss: 0.9301 | cls_loss:2.3177 | Loss: 3.4152
+2018-10-19 01:41:48,405 - InfoLog - INFO - Train: [400/462] | Time: 90m 42s | loc_loss: 1.0481 | cls_loss:2.3190 | Loss: 3.4113
+2018-10-19 01:42:36,822 - InfoLog - INFO - Test starts...
+2018-10-19 01:43:06,884 - InfoLog - INFO - Test: [103/104] | Time: 92m 0s | loc_loss: 1.1433 | cls_loss:2.7869 | Loss: 3.5716
+2018-10-19 01:43:07,413 - InfoLog - INFO - ***Saving model***
+2018-10-19 01:43:07,414 - InfoLog - INFO - Epoch :14
+2018-10-19 01:43:15,394 - InfoLog - INFO - Train: [0/462] | Time: 92m 9s | loc_loss: 1.0470 | cls_loss:2.5512 | Loss: 3.5982
+2018-10-19 01:44:38,010 - InfoLog - INFO - Train: [100/462] | Time: 93m 31s | loc_loss: 1.4314 | cls_loss:2.8891 | Loss: 3.3887
+2018-10-19 01:45:51,931 - InfoLog - INFO - Train: [200/462] | Time: 94m 45s | loc_loss: 1.2057 | cls_loss:2.3630 | Loss: 3.4021
+2018-10-19 01:47:08,877 - InfoLog - INFO - Train: [300/462] | Time: 96m 2s | loc_loss: 1.0366 | cls_loss:2.1384 | Loss: 3.3849
+2018-10-19 01:48:23,791 - InfoLog - INFO - Train: [400/462] | Time: 97m 17s | loc_loss: 1.0553 | cls_loss:2.2409 | Loss: 3.3851
+2018-10-19 01:49:09,788 - InfoLog - INFO - Test starts...
+2018-10-19 01:49:39,457 - InfoLog - INFO - Test: [103/104] | Time: 98m 33s | loc_loss: 1.1349 | cls_loss:2.7670 | Loss: 3.4564
+2018-10-19 01:49:39,928 - InfoLog - INFO - ***Saving model***
+2018-10-19 01:49:39,928 - InfoLog - INFO - Epoch :15
+2018-10-19 01:49:47,757 - InfoLog - INFO - Train: [0/462] | Time: 98m 41s | loc_loss: 1.0458 | cls_loss:2.2679 | Loss: 3.3137
+2018-10-19 01:51:04,506 - InfoLog - INFO - Train: [100/462] | Time: 99m 58s | loc_loss: 1.1216 | cls_loss:2.5244 | Loss: 3.3241
+2018-10-19 01:52:22,997 - InfoLog - INFO - Train: [200/462] | Time: 101m 16s | loc_loss: 1.0749 | cls_loss:2.3345 | Loss: 3.3359
+2018-10-19 01:53:39,513 - InfoLog - INFO - Train: [300/462] | Time: 102m 33s | loc_loss: 1.0656 | cls_loss:2.3582 | Loss: 3.3420
+2018-10-19 01:54:57,244 - InfoLog - INFO - Train: [400/462] | Time: 103m 51s | loc_loss: 1.0209 | cls_loss:2.3511 | Loss: 3.3377
+2018-10-19 01:55:44,396 - InfoLog - INFO - Test starts...
+2018-10-19 01:56:14,679 - InfoLog - INFO - Test: [103/104] | Time: 105m 8s | loc_loss: 1.1053 | cls_loss:2.7520 | Loss: 3.4971
+2018-10-19 01:56:14,680 - InfoLog - INFO - Epoch :16
+2018-10-19 01:56:23,272 - InfoLog - INFO - Train: [0/462] | Time: 105m 17s | loc_loss: 1.3047 | cls_loss:2.5650 | Loss: 3.8697
+2018-10-19 01:57:42,156 - InfoLog - INFO - Train: [100/462] | Time: 106m 36s | loc_loss: 1.0075 | cls_loss:2.2998 | Loss: 3.2733
+2018-10-19 01:58:57,813 - InfoLog - INFO - Train: [200/462] | Time: 107m 51s | loc_loss: 0.9726 | cls_loss:2.0670 | Loss: 3.2981
+2018-10-19 02:00:14,894 - InfoLog - INFO - Train: [300/462] | Time: 109m 8s | loc_loss: 1.0627 | cls_loss:2.2343 | Loss: 3.2927
+2018-10-19 02:01:29,851 - InfoLog - INFO - Train: [400/462] | Time: 110m 23s | loc_loss: 0.9364 | cls_loss:2.2816 | Loss: 3.3004
+2018-10-19 02:02:18,025 - InfoLog - INFO - Test starts...
+2018-10-19 02:02:48,028 - InfoLog - INFO - Test: [103/104] | Time: 111m 41s | loc_loss: 1.0276 | cls_loss:2.7929 | Loss: 3.4554
+2018-10-19 02:02:48,560 - InfoLog - INFO - ***Saving model***
+2018-10-19 02:02:48,561 - InfoLog - INFO - Epoch :17
+2018-10-19 02:02:58,059 - InfoLog - INFO - Train: [0/462] | Time: 111m 52s | loc_loss: 1.0138 | cls_loss:2.1609 | Loss: 3.1747
+2018-10-19 02:04:12,815 - InfoLog - INFO - Train: [100/462] | Time: 113m 6s | loc_loss: 0.8202 | cls_loss:2.1201 | Loss: 3.2797
+2018-10-19 02:05:28,136 - InfoLog - INFO - Train: [200/462] | Time: 114m 22s | loc_loss: 0.9182 | cls_loss:2.4281 | Loss: 3.2643
+2018-10-19 02:06:47,645 - InfoLog - INFO - Train: [300/462] | Time: 115m 41s | loc_loss: 0.9085 | cls_loss:2.2487 | Loss: 3.2611
+2018-10-19 02:08:03,692 - InfoLog - INFO - Train: [400/462] | Time: 116m 57s | loc_loss: 1.0798 | cls_loss:2.3214 | Loss: 3.2645
+2018-10-19 02:08:53,318 - InfoLog - INFO - Test starts...
+2018-10-19 02:09:23,982 - InfoLog - INFO - Test: [103/104] | Time: 118m 17s | loc_loss: 1.0863 | cls_loss:2.6826 | Loss: 3.5020
+2018-10-19 02:09:23,983 - InfoLog - INFO - Epoch :18
+2018-10-19 02:09:32,226 - InfoLog - INFO - Train: [0/462] | Time: 118m 26s | loc_loss: 0.8413 | cls_loss:2.0387 | Loss: 2.8800
+2018-10-19 02:10:48,180 - InfoLog - INFO - Train: [100/462] | Time: 119m 42s | loc_loss: 1.0808 | cls_loss:2.1756 | Loss: 3.2217
+2018-10-19 02:12:00,330 - InfoLog - INFO - Train: [200/462] | Time: 120m 54s | loc_loss: 1.1092 | cls_loss:2.3748 | Loss: 3.2613
+2018-10-19 02:13:14,609 - InfoLog - INFO - Train: [300/462] | Time: 122m 8s | loc_loss: 1.1338 | cls_loss:2.3773 | Loss: 3.2582
+2018-10-19 02:14:33,695 - InfoLog - INFO - Train: [400/462] | Time: 123m 27s | loc_loss: 0.9373 | cls_loss:2.0491 | Loss: 3.2525
+2018-10-19 02:15:20,810 - InfoLog - INFO - Test starts...
+2018-10-19 02:15:50,352 - InfoLog - INFO - Test: [103/104] | Time: 124m 44s | loc_loss: 1.0414 | cls_loss:2.6353 | Loss: 3.3784
+2018-10-19 02:15:50,847 - InfoLog - INFO - ***Saving model***
+2018-10-19 02:15:50,847 - InfoLog - INFO - Epoch :19
+2018-10-19 02:15:59,377 - InfoLog - INFO - Train: [0/462] | Time: 124m 53s | loc_loss: 0.9783 | cls_loss:2.1551 | Loss: 3.1334
+2018-10-19 02:17:12,351 - InfoLog - INFO - Train: [100/462] | Time: 126m 6s | loc_loss: 0.9057 | cls_loss:2.3837 | Loss: 3.2342
+2018-10-19 02:18:26,981 - InfoLog - INFO - Train: [200/462] | Time: 127m 20s | loc_loss: 1.1972 | cls_loss:2.5519 | Loss: 3.2047
+2018-10-19 02:19:43,381 - InfoLog - INFO - Train: [300/462] | Time: 128m 37s | loc_loss: 0.9971 | cls_loss:2.1697 | Loss: 3.2088
+2018-10-19 02:20:57,521 - InfoLog - INFO - Train: [400/462] | Time: 129m 51s | loc_loss: 0.8738 | cls_loss:2.0518 | Loss: 3.2102
+2018-10-19 02:21:44,404 - InfoLog - INFO - Test starts...
+2018-10-19 02:22:13,586 - InfoLog - INFO - Test: [103/104] | Time: 131m 7s | loc_loss: 1.0495 | cls_loss:2.8057 | Loss: 3.3399
+2018-10-19 02:22:14,095 - InfoLog - INFO - ***Saving model***
+2018-10-19 02:22:14,096 - InfoLog - INFO - Epoch :20
+2018-10-19 02:22:21,387 - InfoLog - INFO - Train: [0/462] | Time: 131m 15s | loc_loss: 0.8304 | cls_loss:2.0017 | Loss: 2.8320
+2018-10-19 02:23:41,373 - InfoLog - INFO - Train: [100/462] | Time: 132m 35s | loc_loss: 0.9280 | cls_loss:2.0184 | Loss: 3.1999
+2018-10-19 02:24:55,128 - InfoLog - INFO - Train: [200/462] | Time: 133m 49s | loc_loss: 0.8933 | cls_loss:2.2390 | Loss: 3.1875
+2018-10-19 02:26:10,075 - InfoLog - INFO - Train: [300/462] | Time: 135m 4s | loc_loss: 0.9206 | cls_loss:2.2528 | Loss: 3.1888
+2018-10-19 02:27:30,138 - InfoLog - INFO - Train: [400/462] | Time: 136m 24s | loc_loss: 1.0323 | cls_loss:2.2322 | Loss: 3.1850
+2018-10-19 02:28:16,702 - InfoLog - INFO - Test starts...
+2018-10-19 02:28:46,789 - InfoLog - INFO - Test: [103/104] | Time: 137m 40s | loc_loss: 1.0221 | cls_loss:2.7049 | Loss: 3.3516
+2018-10-19 02:28:46,789 - InfoLog - INFO - Epoch :21
+2018-10-19 02:28:54,868 - InfoLog - INFO - Train: [0/462] | Time: 137m 48s | loc_loss: 0.8639 | cls_loss:2.1303 | Loss: 2.9942
+2018-10-19 02:30:12,251 - InfoLog - INFO - Train: [100/462] | Time: 139m 6s | loc_loss: 1.1385 | cls_loss:2.5062 | Loss: 3.1792
+2018-10-19 02:31:28,678 - InfoLog - INFO - Train: [200/462] | Time: 140m 22s | loc_loss: 1.1822 | cls_loss:2.5551 | Loss: 3.1746
+2018-10-19 02:32:46,085 - InfoLog - INFO - Train: [300/462] | Time: 141m 40s | loc_loss: 0.8497 | cls_loss:2.2301 | Loss: 3.1508
+2018-10-19 02:34:05,366 - InfoLog - INFO - Train: [400/462] | Time: 142m 59s | loc_loss: 0.8876 | cls_loss:2.2427 | Loss: 3.1528
+2018-10-19 02:34:52,977 - InfoLog - INFO - Test starts...
+2018-10-19 02:35:21,868 - InfoLog - INFO - Test: [103/104] | Time: 144m 15s | loc_loss: 1.0714 | cls_loss:2.7890 | Loss: 3.3993
+2018-10-19 02:35:21,868 - InfoLog - INFO - Epoch :22
+2018-10-19 02:35:29,670 - InfoLog - INFO - Train: [0/462] | Time: 144m 23s | loc_loss: 1.0500 | cls_loss:2.0794 | Loss: 3.1294
+2018-10-19 02:36:51,220 - InfoLog - INFO - Train: [100/462] | Time: 145m 45s | loc_loss: 0.9955 | cls_loss:2.1424 | Loss: 3.1344
+2018-10-19 02:38:05,680 - InfoLog - INFO - Train: [200/462] | Time: 146m 59s | loc_loss: 1.0066 | cls_loss:1.9787 | Loss: 3.1190
+2018-10-19 02:39:23,914 - InfoLog - INFO - Train: [300/462] | Time: 148m 17s | loc_loss: 1.0003 | cls_loss:2.2534 | Loss: 3.1216
+2018-10-19 02:40:34,895 - InfoLog - INFO - Train: [400/462] | Time: 149m 28s | loc_loss: 0.9283 | cls_loss:2.3165 | Loss: 3.1161
+2018-10-19 02:41:24,402 - InfoLog - INFO - Test starts...
+2018-10-19 02:41:53,875 - InfoLog - INFO - Test: [103/104] | Time: 150m 47s | loc_loss: 0.9986 | cls_loss:2.6004 | Loss: 3.3584
+2018-10-19 02:41:53,875 - InfoLog - INFO - Epoch :23
+2018-10-19 02:42:01,815 - InfoLog - INFO - Train: [0/462] | Time: 150m 55s | loc_loss: 1.0144 | cls_loss:2.3274 | Loss: 3.3418
+2018-10-19 02:43:19,203 - InfoLog - INFO - Train: [100/462] | Time: 152m 13s | loc_loss: 0.9622 | cls_loss:2.1710 | Loss: 3.1003
+2018-10-19 02:44:36,487 - InfoLog - INFO - Train: [200/462] | Time: 153m 30s | loc_loss: 0.8770 | cls_loss:2.0630 | Loss: 3.0963
+2018-10-19 02:45:45,365 - InfoLog - INFO - Train: [300/462] | Time: 154m 39s | loc_loss: 0.8187 | cls_loss:2.1044 | Loss: 3.1041
+2018-10-19 02:46:59,538 - InfoLog - INFO - Train: [400/462] | Time: 155m 53s | loc_loss: 0.9761 | cls_loss:2.2759 | Loss: 3.1016
+2018-10-19 02:47:45,271 - InfoLog - INFO - Test starts...
+2018-10-19 02:48:15,401 - InfoLog - INFO - Test: [103/104] | Time: 157m 9s | loc_loss: 1.0371 | cls_loss:2.6967 | Loss: 3.3761
+2018-10-19 02:48:15,402 - InfoLog - INFO - Epoch :24
+2018-10-19 02:48:23,711 - InfoLog - INFO - Train: [0/462] | Time: 157m 17s | loc_loss: 1.2478 | cls_loss:2.5355 | Loss: 3.7834
+2018-10-19 02:49:40,974 - InfoLog - INFO - Train: [100/462] | Time: 158m 34s | loc_loss: 0.9432 | cls_loss:2.1020 | Loss: 3.0579
+2018-10-19 02:50:54,889 - InfoLog - INFO - Train: [200/462] | Time: 159m 48s | loc_loss: 1.1568 | cls_loss:2.3138 | Loss: 3.0970
+2018-10-19 02:52:10,269 - InfoLog - INFO - Train: [300/462] | Time: 161m 4s | loc_loss: 0.8653 | cls_loss:1.9758 | Loss: 3.0756
+2018-10-19 02:53:22,473 - InfoLog - INFO - Train: [400/462] | Time: 162m 16s | loc_loss: 0.8781 | cls_loss:2.2878 | Loss: 3.0833
+2018-10-19 02:54:10,620 - InfoLog - INFO - Test starts...
+2018-10-19 02:54:40,360 - InfoLog - INFO - Test: [103/104] | Time: 163m 34s | loc_loss: 1.0025 | cls_loss:2.8263 | Loss: 3.3326
+2018-10-19 02:54:40,847 - InfoLog - INFO - ***Saving model***
+2018-10-19 02:54:40,847 - InfoLog - INFO - Epoch :25
+2018-10-19 02:54:48,908 - InfoLog - INFO - Train: [0/462] | Time: 163m 42s | loc_loss: 0.8059 | cls_loss:2.1160 | Loss: 2.9220
+2018-10-19 02:56:03,196 - InfoLog - INFO - Train: [100/462] | Time: 164m 57s | loc_loss: 0.8170 | cls_loss:2.1311 | Loss: 3.0696
+2018-10-19 02:57:27,125 - InfoLog - INFO - Train: [200/462] | Time: 166m 21s | loc_loss: 0.8710 | cls_loss:2.0576 | Loss: 3.0515
+2018-10-19 02:58:37,950 - InfoLog - INFO - Train: [300/462] | Time: 167m 31s | loc_loss: 0.7454 | cls_loss:1.8281 | Loss: 3.0564
+2018-10-19 02:59:55,118 - InfoLog - INFO - Train: [400/462] | Time: 168m 49s | loc_loss: 0.8635 | cls_loss:2.1658 | Loss: 3.0375
+2018-10-19 03:00:39,526 - InfoLog - INFO - Test starts...
+2018-10-19 03:01:09,825 - InfoLog - INFO - Test: [103/104] | Time: 170m 3s | loc_loss: 1.0772 | cls_loss:2.6986 | Loss: 3.2553
+2018-10-19 03:01:10,258 - InfoLog - INFO - ***Saving model***
+2018-10-19 03:01:10,259 - InfoLog - INFO - Epoch :26
+2018-10-19 03:01:17,745 - InfoLog - INFO - Train: [0/462] | Time: 170m 11s | loc_loss: 0.8330 | cls_loss:1.9907 | Loss: 2.8237
+2018-10-19 03:02:39,450 - InfoLog - INFO - Train: [100/462] | Time: 171m 33s | loc_loss: 0.8918 | cls_loss:2.1475 | Loss: 3.0499
+2018-10-19 03:03:56,740 - InfoLog - INFO - Train: [200/462] | Time: 172m 50s | loc_loss: 1.0054 | cls_loss:2.0454 | Loss: 3.0329
+2018-10-19 03:05:12,704 - InfoLog - INFO - Train: [300/462] | Time: 174m 6s | loc_loss: 0.9149 | cls_loss:1.9142 | Loss: 3.0367
+2018-10-19 03:06:28,222 - InfoLog - INFO - Train: [400/462] | Time: 175m 22s | loc_loss: 1.0274 | cls_loss:2.1044 | Loss: 3.0362
+2018-10-19 03:07:14,977 - InfoLog - INFO - Test starts...
+2018-10-19 03:07:44,657 - InfoLog - INFO - Test: [103/104] | Time: 176m 38s | loc_loss: 1.0499 | cls_loss:2.5119 | Loss: 3.3172
+2018-10-19 03:07:44,657 - InfoLog - INFO - Epoch :27
+2018-10-19 03:07:52,923 - InfoLog - INFO - Train: [0/462] | Time: 176m 46s | loc_loss: 0.9843 | cls_loss:2.0210 | Loss: 3.0053
+2018-10-19 03:09:13,530 - InfoLog - INFO - Train: [100/462] | Time: 178m 7s | loc_loss: 1.0273 | cls_loss:2.2461 | Loss: 2.9862
+2018-10-19 03:10:30,016 - InfoLog - INFO - Train: [200/462] | Time: 179m 23s | loc_loss: 0.9239 | cls_loss:2.0514 | Loss: 2.9866
+2018-10-19 03:11:44,065 - InfoLog - INFO - Train: [300/462] | Time: 180m 38s | loc_loss: 0.9206 | cls_loss:2.0285 | Loss: 2.9995
+2018-10-19 03:13:04,462 - InfoLog - INFO - Train: [400/462] | Time: 181m 58s | loc_loss: 0.9470 | cls_loss:2.1858 | Loss: 3.0194
+2018-10-19 03:13:50,124 - InfoLog - INFO - Test starts...
+2018-10-19 03:14:20,951 - InfoLog - INFO - Test: [103/104] | Time: 183m 14s | loc_loss: 1.0493 | cls_loss:2.5937 | Loss: 3.2739
+2018-10-19 03:14:20,951 - InfoLog - INFO - Epoch :28
+2018-10-19 03:14:29,255 - InfoLog - INFO - Train: [0/462] | Time: 183m 23s | loc_loss: 1.0911 | cls_loss:2.3634 | Loss: 3.4545
+2018-10-19 03:15:44,986 - InfoLog - INFO - Train: [100/462] | Time: 184m 38s | loc_loss: 1.0707 | cls_loss:2.4002 | Loss: 2.9783
+2018-10-19 03:17:02,027 - InfoLog - INFO - Train: [200/462] | Time: 185m 55s | loc_loss: 0.8832 | cls_loss:2.1096 | Loss: 2.9717
+2018-10-19 03:18:20,503 - InfoLog - INFO - Train: [300/462] | Time: 187m 14s | loc_loss: 0.9005 | cls_loss:2.0972 | Loss: 2.9704
+2018-10-19 03:19:35,956 - InfoLog - INFO - Train: [400/462] | Time: 188m 29s | loc_loss: 0.9213 | cls_loss:2.0005 | Loss: 2.9783
+2018-10-19 03:20:21,570 - InfoLog - INFO - Test starts...
+2018-10-19 03:20:51,065 - InfoLog - INFO - Test: [103/104] | Time: 189m 45s | loc_loss: 1.0511 | cls_loss:2.9512 | Loss: 3.3040
+2018-10-19 03:20:51,065 - InfoLog - INFO - Epoch :29
+2018-10-19 03:20:59,066 - InfoLog - INFO - Train: [0/462] | Time: 189m 53s | loc_loss: 0.8472 | cls_loss:2.1120 | Loss: 2.9592
+2018-10-19 03:22:15,052 - InfoLog - INFO - Train: [100/462] | Time: 191m 8s | loc_loss: 1.1405 | cls_loss:2.0917 | Loss: 2.9745
+2018-10-19 03:23:26,503 - InfoLog - INFO - Train: [200/462] | Time: 192m 20s | loc_loss: 0.8756 | cls_loss:2.1271 | Loss: 2.9609
+2018-10-19 03:24:42,770 - InfoLog - INFO - Train: [300/462] | Time: 193m 36s | loc_loss: 0.7014 | cls_loss:1.9803 | Loss: 2.9701
+2018-10-19 03:25:59,267 - InfoLog - INFO - Train: [400/462] | Time: 194m 53s | loc_loss: 0.8372 | cls_loss:2.1683 | Loss: 2.9745
+2018-10-19 03:26:44,122 - InfoLog - INFO - Test starts...
+2018-10-19 03:27:13,805 - InfoLog - INFO - Test: [103/104] | Time: 196m 7s | loc_loss: 0.9557 | cls_loss:2.6444 | Loss: 3.2986
+2018-10-19 03:27:13,805 - InfoLog - INFO - Epoch :30
+2018-10-19 03:27:22,816 - InfoLog - INFO - Train: [0/462] | Time: 196m 16s | loc_loss: 0.9666 | cls_loss:2.0249 | Loss: 2.9914
+2018-10-19 03:28:40,979 - InfoLog - INFO - Train: [100/462] | Time: 197m 34s | loc_loss: 0.9980 | cls_loss:2.0093 | Loss: 2.9440
+2018-10-19 03:30:00,955 - InfoLog - INFO - Train: [200/462] | Time: 198m 54s | loc_loss: 1.0663 | cls_loss:2.2296 | Loss: 2.9508
+2018-10-19 03:31:21,128 - InfoLog - INFO - Train: [300/462] | Time: 200m 15s | loc_loss: 0.8473 | cls_loss:1.9834 | Loss: 2.9529
+2018-10-19 03:32:43,779 - InfoLog - INFO - Train: [400/462] | Time: 201m 37s | loc_loss: 0.8353 | cls_loss:1.9779 | Loss: 2.9493
+2018-10-19 03:33:29,512 - InfoLog - INFO - Test starts...
+2018-10-19 03:33:58,664 - InfoLog - INFO - Test: [103/104] | Time: 202m 52s | loc_loss: 1.0071 | cls_loss:2.8737 | Loss: 3.3173
+2018-10-19 03:33:58,665 - InfoLog - INFO - Epoch :31
+2018-10-19 03:34:06,081 - InfoLog - INFO - Train: [0/462] | Time: 203m 0s | loc_loss: 0.7720 | cls_loss:2.2423 | Loss: 3.0144
+2018-10-19 03:35:22,049 - InfoLog - INFO - Train: [100/462] | Time: 204m 15s | loc_loss: 0.7914 | cls_loss:1.9406 | Loss: 2.9675
+2018-10-19 03:36:37,340 - InfoLog - INFO - Train: [200/462] | Time: 205m 31s | loc_loss: 0.9943 | cls_loss:2.2379 | Loss: 2.9716
+2018-10-19 03:37:52,964 - InfoLog - INFO - Train: [300/462] | Time: 206m 46s | loc_loss: 0.9762 | cls_loss:2.2609 | Loss: 2.9582
+2018-10-19 03:39:12,338 - InfoLog - INFO - Train: [400/462] | Time: 208m 6s | loc_loss: 0.8804 | cls_loss:2.0798 | Loss: 2.9343
+2018-10-19 03:39:57,092 - InfoLog - INFO - Test starts...
+2018-10-19 03:40:27,493 - InfoLog - INFO - Test: [103/104] | Time: 209m 21s | loc_loss: 1.0146 | cls_loss:2.6635 | Loss: 3.2238
+2018-10-19 03:40:27,936 - InfoLog - INFO - ***Saving model***
+2018-10-19 03:40:27,936 - InfoLog - INFO - Epoch :32
+2018-10-19 03:40:35,562 - InfoLog - INFO - Train: [0/462] | Time: 209m 29s | loc_loss: 0.8412 | cls_loss:1.8712 | Loss: 2.7124
+2018-10-19 03:41:52,099 - InfoLog - INFO - Train: [100/462] | Time: 210m 46s | loc_loss: 0.7855 | cls_loss:1.9947 | Loss: 2.8677
+2018-10-19 03:43:08,217 - InfoLog - INFO - Train: [200/462] | Time: 212m 2s | loc_loss: 1.0212 | cls_loss:2.3296 | Loss: 2.8779
+2018-10-19 03:44:23,519 - InfoLog - INFO - Train: [300/462] | Time: 213m 17s | loc_loss: 0.7132 | cls_loss:1.8863 | Loss: 2.8959
+2018-10-19 03:45:41,158 - InfoLog - INFO - Train: [400/462] | Time: 214m 35s | loc_loss: 0.9025 | cls_loss:1.9384 | Loss: 2.9036
+2018-10-19 03:46:29,029 - InfoLog - INFO - Test starts...
+2018-10-19 03:46:58,786 - InfoLog - INFO - Test: [103/104] | Time: 215m 52s | loc_loss: 1.0065 | cls_loss:2.4661 | Loss: 3.3052
+2018-10-19 03:46:58,787 - InfoLog - INFO - Epoch :33
+2018-10-19 03:47:06,811 - InfoLog - INFO - Train: [0/462] | Time: 216m 0s | loc_loss: 0.8871 | cls_loss:2.0858 | Loss: 2.9728
+2018-10-19 03:48:22,725 - InfoLog - INFO - Train: [100/462] | Time: 217m 16s | loc_loss: 1.1797 | cls_loss:2.1524 | Loss: 2.8721
+2018-10-19 03:49:45,009 - InfoLog - INFO - Train: [200/462] | Time: 218m 38s | loc_loss: 0.8712 | cls_loss:2.2907 | Loss: 2.8860
+2018-10-19 03:50:57,488 - InfoLog - INFO - Train: [300/462] | Time: 219m 51s | loc_loss: 0.9856 | cls_loss:2.0162 | Loss: 2.9046
+2018-10-19 03:52:20,729 - InfoLog - INFO - Train: [400/462] | Time: 221m 14s | loc_loss: 0.9161 | cls_loss:2.3106 | Loss: 2.8962
+2018-10-19 03:53:14,838 - InfoLog - INFO - Test starts...
+2018-10-19 03:53:45,350 - InfoLog - INFO - Test: [103/104] | Time: 222m 39s | loc_loss: 1.0152 | cls_loss:2.7694 | Loss: 3.2159
+2018-10-19 03:53:45,857 - InfoLog - INFO - ***Saving model***
+2018-10-19 03:53:45,857 - InfoLog - INFO - Epoch :34
+2018-10-19 03:53:53,523 - InfoLog - INFO - Train: [0/462] | Time: 222m 47s | loc_loss: 0.8781 | cls_loss:2.0315 | Loss: 2.9096
+2018-10-19 03:55:10,427 - InfoLog - INFO - Train: [100/462] | Time: 224m 4s | loc_loss: 0.9284 | cls_loss:2.0572 | Loss: 2.8936
+2018-10-19 03:56:23,564 - InfoLog - INFO - Train: [200/462] | Time: 225m 17s | loc_loss: 0.7933 | cls_loss:2.0456 | Loss: 2.8986
+2018-10-19 03:57:36,526 - InfoLog - INFO - Train: [300/462] | Time: 226m 30s | loc_loss: 0.8017 | cls_loss:1.8581 | Loss: 2.8928
+2018-10-19 03:58:51,149 - InfoLog - INFO - Train: [400/462] | Time: 227m 45s | loc_loss: 0.7866 | cls_loss:1.8412 | Loss: 2.8814
+2018-10-19 03:59:36,447 - InfoLog - INFO - Test starts...
+2018-10-19 04:00:06,880 - InfoLog - INFO - Test: [103/104] | Time: 229m 0s | loc_loss: 1.0361 | cls_loss:2.7192 | Loss: 3.2521
+2018-10-19 04:00:06,881 - InfoLog - INFO - Epoch :35
+2018-10-19 04:00:15,437 - InfoLog - INFO - Train: [0/462] | Time: 229m 9s | loc_loss: 0.9169 | cls_loss:2.1620 | Loss: 3.0788
+2018-10-19 04:01:30,832 - InfoLog - INFO - Train: [100/462] | Time: 230m 24s | loc_loss: 0.9464 | cls_loss:2.0371 | Loss: 2.8654
+2018-10-19 04:02:47,860 - InfoLog - INFO - Train: [200/462] | Time: 231m 41s | loc_loss: 0.9637 | cls_loss:2.0920 | Loss: 2.8782
+2018-10-19 04:04:08,198 - InfoLog - INFO - Train: [300/462] | Time: 233m 2s | loc_loss: 0.8697 | cls_loss:1.9715 | Loss: 2.8706
+2018-10-19 04:05:19,989 - InfoLog - INFO - Train: [400/462] | Time: 234m 13s | loc_loss: 0.8002 | cls_loss:1.9597 | Loss: 2.8791
+2018-10-19 04:06:04,034 - InfoLog - INFO - Test starts...
+2018-10-19 04:06:33,336 - InfoLog - INFO - Test: [103/104] | Time: 235m 27s | loc_loss: 1.0558 | cls_loss:2.7968 | Loss: 3.1413
+2018-10-19 04:06:33,761 - InfoLog - INFO - ***Saving model***
+2018-10-19 04:06:33,762 - InfoLog - INFO - Epoch :36
+2018-10-19 04:06:41,767 - InfoLog - INFO - Train: [0/462] | Time: 235m 35s | loc_loss: 0.8772 | cls_loss:1.8987 | Loss: 2.7759
+2018-10-19 04:08:01,353 - InfoLog - INFO - Train: [100/462] | Time: 236m 55s | loc_loss: 0.8815 | cls_loss:1.9975 | Loss: 2.8247
+2018-10-19 04:09:18,116 - InfoLog - INFO - Train: [200/462] | Time: 238m 12s | loc_loss: 0.9567 | cls_loss:2.1100 | Loss: 2.8221
+2018-10-19 04:10:34,061 - InfoLog - INFO - Train: [300/462] | Time: 239m 28s | loc_loss: 0.7881 | cls_loss:1.8225 | Loss: 2.8291
+2018-10-19 04:11:49,678 - InfoLog - INFO - Train: [400/462] | Time: 240m 43s | loc_loss: 0.5861 | cls_loss:1.8844 | Loss: 2.8278
+2018-10-19 04:12:34,023 - InfoLog - INFO - Test starts...
+2018-10-19 04:13:04,577 - InfoLog - INFO - Test: [103/104] | Time: 241m 58s | loc_loss: 0.9196 | cls_loss:2.6318 | Loss: 3.1775
+2018-10-19 04:13:04,578 - InfoLog - INFO - Epoch :37
+2018-10-19 04:13:12,759 - InfoLog - INFO - Train: [0/462] | Time: 242m 6s | loc_loss: 0.8705 | cls_loss:2.0044 | Loss: 2.8749
+2018-10-19 04:14:30,755 - InfoLog - INFO - Train: [100/462] | Time: 243m 24s | loc_loss: 0.8607 | cls_loss:1.9120 | Loss: 2.7970
+2018-10-19 04:15:51,530 - InfoLog - INFO - Train: [200/462] | Time: 244m 45s | loc_loss: 0.6974 | cls_loss:1.7376 | Loss: 2.8211
+2018-10-19 04:17:09,596 - InfoLog - INFO - Train: [300/462] | Time: 246m 3s | loc_loss: 0.8545 | cls_loss:1.9679 | Loss: 2.8182
+2018-10-19 04:18:21,238 - InfoLog - INFO - Train: [400/462] | Time: 247m 15s | loc_loss: 0.7683 | cls_loss:1.9435 | Loss: 2.8204
+2018-10-19 04:19:07,136 - InfoLog - INFO - Test starts...
+2018-10-19 04:19:36,116 - InfoLog - INFO - Test: [103/104] | Time: 248m 30s | loc_loss: 0.9716 | cls_loss:2.7666 | Loss: 3.1926
+2018-10-19 04:19:36,117 - InfoLog - INFO - Epoch :38
+2018-10-19 04:19:43,853 - InfoLog - INFO - Train: [0/462] | Time: 248m 37s | loc_loss: 0.7519 | cls_loss:1.7329 | Loss: 2.4848
+2018-10-19 04:20:58,416 - InfoLog - INFO - Train: [100/462] | Time: 249m 52s | loc_loss: 0.6559 | cls_loss:1.5519 | Loss: 2.7915
+2018-10-19 04:22:17,263 - InfoLog - INFO - Train: [200/462] | Time: 251m 11s | loc_loss: 0.7176 | cls_loss:1.9279 | Loss: 2.7955
+2018-10-19 04:23:33,572 - InfoLog - INFO - Train: [300/462] | Time: 252m 27s | loc_loss: 1.0727 | cls_loss:2.1205 | Loss: 2.7885
+2018-10-19 04:24:57,204 - InfoLog - INFO - Train: [400/462] | Time: 253m 51s | loc_loss: 0.8092 | cls_loss:2.0787 | Loss: 2.7969
+2018-10-19 04:25:46,750 - InfoLog - INFO - Test starts...
+2018-10-19 04:26:17,426 - InfoLog - INFO - Test: [103/104] | Time: 255m 11s | loc_loss: 1.0625 | cls_loss:2.7864 | Loss: 3.1722
+2018-10-19 04:26:17,427 - InfoLog - INFO - Epoch :39
+2018-10-19 04:26:24,811 - InfoLog - INFO - Train: [0/462] | Time: 255m 18s | loc_loss: 0.8290 | cls_loss:2.1954 | Loss: 3.0244
+2018-10-19 04:27:42,991 - InfoLog - INFO - Train: [100/462] | Time: 256m 36s | loc_loss: 0.8959 | cls_loss:2.3776 | Loss: 2.7620
+2018-10-19 04:28:53,928 - InfoLog - INFO - Train: [200/462] | Time: 257m 47s | loc_loss: 0.8544 | cls_loss:2.0637 | Loss: 2.7764
+2018-10-19 04:30:18,043 - InfoLog - INFO - Train: [300/462] | Time: 259m 11s | loc_loss: 0.8594 | cls_loss:1.8960 | Loss: 2.7841
+2018-10-19 04:31:38,289 - InfoLog - INFO - Train: [400/462] | Time: 260m 32s | loc_loss: 0.8926 | cls_loss:2.0431 | Loss: 2.7840
+2018-10-19 04:32:28,747 - InfoLog - INFO - Test starts...
+2018-10-19 04:32:58,835 - InfoLog - INFO - Test: [103/104] | Time: 261m 52s | loc_loss: 0.9951 | cls_loss:2.5990 | Loss: 3.1289
+2018-10-19 04:32:59,353 - InfoLog - INFO - ***Saving model***
+2018-10-19 04:32:59,354 - InfoLog - INFO - Epoch :40
+2018-10-19 04:33:07,008 - InfoLog - INFO - Train: [0/462] | Time: 262m 0s | loc_loss: 0.8355 | cls_loss:1.9858 | Loss: 2.8212
+2018-10-19 04:34:25,045 - InfoLog - INFO - Train: [100/462] | Time: 263m 18s | loc_loss: 0.8537 | cls_loss:1.9938 | Loss: 2.7744
+2018-10-19 04:35:44,470 - InfoLog - INFO - Train: [200/462] | Time: 264m 38s | loc_loss: 0.8553 | cls_loss:1.9953 | Loss: 2.7694
+2018-10-19 04:37:08,314 - InfoLog - INFO - Train: [300/462] | Time: 266m 2s | loc_loss: 0.6967 | cls_loss:1.8540 | Loss: 2.7864
+2018-10-19 04:38:27,676 - InfoLog - INFO - Train: [400/462] | Time: 267m 21s | loc_loss: 0.8694 | cls_loss:1.8453 | Loss: 2.7922
+2018-10-19 04:39:11,884 - InfoLog - INFO - Test starts...
+2018-10-19 04:39:41,368 - InfoLog - INFO - Test: [103/104] | Time: 268m 35s | loc_loss: 0.9640 | cls_loss:2.4702 | Loss: 3.1165
+2018-10-19 04:39:41,764 - InfoLog - INFO - ***Saving model***
+2018-10-19 04:39:41,765 - InfoLog - INFO - Epoch :41
+2018-10-19 04:39:49,426 - InfoLog - INFO - Train: [0/462] | Time: 268m 43s | loc_loss: 0.7933 | cls_loss:1.8237 | Loss: 2.6170
+2018-10-19 04:41:12,644 - InfoLog - INFO - Train: [100/462] | Time: 270m 6s | loc_loss: 0.7746 | cls_loss:1.8938 | Loss: 2.7325
+2018-10-19 04:42:37,188 - InfoLog - INFO - Train: [200/462] | Time: 271m 31s | loc_loss: 0.7909 | cls_loss:2.0135 | Loss: 2.7331
+2018-10-19 04:43:49,910 - InfoLog - INFO - Train: [300/462] | Time: 272m 43s | loc_loss: 0.7178 | cls_loss:1.8592 | Loss: 2.7547
+2018-10-19 04:45:05,887 - InfoLog - INFO - Train: [400/462] | Time: 273m 59s | loc_loss: 0.8487 | cls_loss:2.1115 | Loss: 2.7546
+2018-10-19 04:45:57,128 - InfoLog - INFO - Test starts...
+2018-10-19 04:46:27,691 - InfoLog - INFO - Test: [103/104] | Time: 275m 21s | loc_loss: 0.9440 | cls_loss:2.6215 | Loss: 3.2501
+2018-10-19 04:46:27,692 - InfoLog - INFO - Epoch :42
+2018-10-19 04:46:34,945 - InfoLog - INFO - Train: [0/462] | Time: 275m 28s | loc_loss: 0.8793 | cls_loss:2.0742 | Loss: 2.9535
+2018-10-19 04:47:55,499 - InfoLog - INFO - Train: [100/462] | Time: 276m 49s | loc_loss: 0.9105 | cls_loss:1.9873 | Loss: 2.7160
+2018-10-19 04:49:12,115 - InfoLog - INFO - Train: [200/462] | Time: 278m 6s | loc_loss: 0.7546 | cls_loss:1.8222 | Loss: 2.7205
+2018-10-19 04:50:28,853 - InfoLog - INFO - Train: [300/462] | Time: 279m 22s | loc_loss: 0.7737 | cls_loss:2.0246 | Loss: 2.7286
+2018-10-19 04:51:46,802 - InfoLog - INFO - Train: [400/462] | Time: 280m 40s | loc_loss: 0.6278 | cls_loss:1.8693 | Loss: 2.7287
+2018-10-19 04:52:30,554 - InfoLog - INFO - Test starts...
+2018-10-19 04:53:00,762 - InfoLog - INFO - Test: [103/104] | Time: 281m 54s | loc_loss: 0.9708 | cls_loss:2.6198 | Loss: 3.1462
+2018-10-19 04:53:00,762 - InfoLog - INFO - Epoch :43
+2018-10-19 04:53:08,675 - InfoLog - INFO - Train: [0/462] | Time: 282m 2s | loc_loss: 0.7587 | cls_loss:1.9787 | Loss: 2.7375
+2018-10-19 04:54:25,759 - InfoLog - INFO - Train: [100/462] | Time: 283m 19s | loc_loss: 0.7694 | cls_loss:1.9341 | Loss: 2.7530
+2018-10-19 04:55:40,919 - InfoLog - INFO - Train: [200/462] | Time: 284m 34s | loc_loss: 1.0350 | cls_loss:2.2080 | Loss: 2.7278
+2018-10-19 04:56:56,397 - InfoLog - INFO - Train: [300/462] | Time: 285m 50s | loc_loss: 0.8095 | cls_loss:2.0732 | Loss: 2.7277
+2018-10-19 04:58:14,431 - InfoLog - INFO - Train: [400/462] | Time: 287m 8s | loc_loss: 0.8232 | cls_loss:1.8593 | Loss: 2.7356
+2018-10-19 04:58:56,506 - InfoLog - INFO - Test starts...
+2018-10-19 04:59:26,684 - InfoLog - INFO - Test: [103/104] | Time: 288m 20s | loc_loss: 1.0100 | cls_loss:2.6161 | Loss: 3.1154
+2018-10-19 04:59:27,214 - InfoLog - INFO - ***Saving model***
+2018-10-19 04:59:27,214 - InfoLog - INFO - Epoch :44
+2018-10-19 04:59:34,967 - InfoLog - INFO - Train: [0/462] | Time: 288m 28s | loc_loss: 0.8203 | cls_loss:1.9993 | Loss: 2.8197
+2018-10-19 05:00:51,770 - InfoLog - INFO - Train: [100/462] | Time: 289m 45s | loc_loss: 0.9026 | cls_loss:2.2113 | Loss: 2.7756
+2018-10-19 05:02:13,342 - InfoLog - INFO - Train: [200/462] | Time: 291m 7s | loc_loss: 0.5703 | cls_loss:1.6397 | Loss: 2.7401
+2018-10-19 05:03:23,517 - InfoLog - INFO - Train: [300/462] | Time: 292m 17s | loc_loss: 0.7664 | cls_loss:1.8205 | Loss: 2.7375
+2018-10-19 05:04:38,193 - InfoLog - INFO - Train: [400/462] | Time: 293m 32s | loc_loss: 0.8853 | cls_loss:2.0372 | Loss: 2.7347
+2018-10-19 05:05:22,920 - InfoLog - INFO - Test starts...
+2018-10-19 05:05:51,150 - InfoLog - INFO - Test: [103/104] | Time: 294m 45s | loc_loss: 0.9616 | cls_loss:2.7451 | Loss: 3.1302
+2018-10-19 05:05:51,151 - InfoLog - INFO - Epoch :45
+2018-10-19 05:05:59,523 - InfoLog - INFO - Train: [0/462] | Time: 294m 53s | loc_loss: 0.8317 | cls_loss:1.9824 | Loss: 2.8142
+2018-10-19 05:07:19,244 - InfoLog - INFO - Train: [100/462] | Time: 296m 13s | loc_loss: 0.8401 | cls_loss:1.8898 | Loss: 2.7112
+2018-10-19 05:08:30,790 - InfoLog - INFO - Train: [200/462] | Time: 297m 24s | loc_loss: 0.7489 | cls_loss:1.6873 | Loss: 2.6977
+2018-10-19 05:09:49,373 - InfoLog - INFO - Train: [300/462] | Time: 298m 43s | loc_loss: 0.9345 | cls_loss:1.9739 | Loss: 2.6945
+2018-10-19 05:11:04,090 - InfoLog - INFO - Train: [400/462] | Time: 299m 58s | loc_loss: 0.8102 | cls_loss:1.7623 | Loss: 2.6955
+2018-10-19 05:11:47,459 - InfoLog - INFO - Test starts...
+2018-10-19 05:12:16,823 - InfoLog - INFO - Test: [103/104] | Time: 301m 10s | loc_loss: 0.9698 | cls_loss:2.6716 | Loss: 3.1076
+2018-10-19 05:12:17,310 - InfoLog - INFO - ***Saving model***
+2018-10-19 05:12:17,310 - InfoLog - INFO - Epoch :46
+2018-10-19 05:12:24,439 - InfoLog - INFO - Train: [0/462] | Time: 301m 18s | loc_loss: 0.6581 | cls_loss:1.8135 | Loss: 2.4716
+2018-10-19 05:13:42,009 - InfoLog - INFO - Train: [100/462] | Time: 302m 35s | loc_loss: 0.7764 | cls_loss:1.7745 | Loss: 2.7148
+2018-10-19 05:14:59,251 - InfoLog - INFO - Train: [200/462] | Time: 303m 53s | loc_loss: 0.7057 | cls_loss:1.7716 | Loss: 2.7012
+2018-10-19 05:16:15,923 - InfoLog - INFO - Train: [300/462] | Time: 305m 9s | loc_loss: 0.6254 | cls_loss:1.7146 | Loss: 2.7096
+2018-10-19 05:17:32,696 - InfoLog - INFO - Train: [400/462] | Time: 306m 26s | loc_loss: 0.9629 | cls_loss:1.9975 | Loss: 2.7051
+2018-10-19 05:18:22,798 - InfoLog - INFO - Test starts...
+2018-10-19 05:18:51,503 - InfoLog - INFO - Test: [103/104] | Time: 307m 45s | loc_loss: 0.9851 | cls_loss:2.6871 | Loss: 3.1388
+2018-10-19 05:18:51,504 - InfoLog - INFO - Epoch :47
+2018-10-19 05:18:59,348 - InfoLog - INFO - Train: [0/462] | Time: 307m 53s | loc_loss: 0.8664 | cls_loss:1.8589 | Loss: 2.7252
+2018-10-19 05:20:13,732 - InfoLog - INFO - Train: [100/462] | Time: 309m 7s | loc_loss: 0.7402 | cls_loss:1.8137 | Loss: 2.6971
+2018-10-19 05:21:36,010 - InfoLog - INFO - Train: [200/462] | Time: 310m 29s | loc_loss: 0.8495 | cls_loss:1.9436 | Loss: 2.7123
+2018-10-19 05:22:47,518 - InfoLog - INFO - Train: [300/462] | Time: 311m 41s | loc_loss: 0.9251 | cls_loss:2.0284 | Loss: 2.7053
+2018-10-19 05:24:04,173 - InfoLog - INFO - Train: [400/462] | Time: 312m 58s | loc_loss: 0.6317 | cls_loss:1.6235 | Loss: 2.6981
+2018-10-19 05:24:45,689 - InfoLog - INFO - Test starts...
+2018-10-19 05:25:15,389 - InfoLog - INFO - Test: [103/104] | Time: 314m 9s | loc_loss: 0.9960 | cls_loss:2.6244 | Loss: 3.1062
+2018-10-19 05:25:15,844 - InfoLog - INFO - ***Saving model***
+2018-10-19 05:25:15,844 - InfoLog - INFO - Epoch :48
+2018-10-19 05:25:23,868 - InfoLog - INFO - Train: [0/462] | Time: 314m 17s | loc_loss: 0.8624 | cls_loss:2.0423 | Loss: 2.9047
+2018-10-19 05:26:38,678 - InfoLog - INFO - Train: [100/462] | Time: 315m 32s | loc_loss: 0.9623 | cls_loss:2.1276 | Loss: 2.6688
+2018-10-19 05:27:52,541 - InfoLog - INFO - Train: [200/462] | Time: 316m 46s | loc_loss: 0.7077 | cls_loss:1.8138 | Loss: 2.6598
+2018-10-19 05:29:07,721 - InfoLog - INFO - Train: [300/462] | Time: 318m 1s | loc_loss: 0.8090 | cls_loss:1.9010 | Loss: 2.6642
+2018-10-19 05:30:24,873 - InfoLog - INFO - Train: [400/462] | Time: 319m 18s | loc_loss: 0.8474 | cls_loss:1.9660 | Loss: 2.6763
+2018-10-19 05:31:12,516 - InfoLog - INFO - Test starts...
+2018-10-19 05:31:42,657 - InfoLog - INFO - Test: [103/104] | Time: 320m 36s | loc_loss: 0.9844 | cls_loss:2.7958 | Loss: 3.1083
+2018-10-19 05:31:42,658 - InfoLog - INFO - Epoch :49
+2018-10-19 05:31:50,921 - InfoLog - INFO - Train: [0/462] | Time: 320m 44s | loc_loss: 0.8267 | cls_loss:1.9796 | Loss: 2.8063
+2018-10-19 05:33:13,470 - InfoLog - INFO - Train: [100/462] | Time: 322m 7s | loc_loss: 0.6467 | cls_loss:1.6898 | Loss: 2.6309
+2018-10-19 05:34:34,616 - InfoLog - INFO - Train: [200/462] | Time: 323m 28s | loc_loss: 0.8760 | cls_loss:2.2486 | Loss: 2.6382
+2018-10-19 05:35:57,685 - InfoLog - INFO - Train: [300/462] | Time: 324m 51s | loc_loss: 0.8103 | cls_loss:2.1152 | Loss: 2.6359
+2018-10-19 05:37:12,161 - InfoLog - INFO - Train: [400/462] | Time: 326m 6s | loc_loss: 0.8218 | cls_loss:1.9618 | Loss: 2.6357
+2018-10-19 05:37:55,635 - InfoLog - INFO - Test starts...
+2018-10-19 05:38:26,530 - InfoLog - INFO - Test: [103/104] | Time: 327m 20s | loc_loss: 0.9957 | cls_loss:2.5802 | Loss: 3.1354
+2018-10-19 05:38:26,531 - InfoLog - INFO - Epoch :50
+2018-10-19 05:38:34,072 - InfoLog - INFO - Train: [0/462] | Time: 327m 28s | loc_loss: 0.6262 | cls_loss:1.7104 | Loss: 2.3365
+2018-10-19 05:39:46,505 - InfoLog - INFO - Train: [100/462] | Time: 328m 40s | loc_loss: 0.6231 | cls_loss:1.6017 | Loss: 2.6567
+2018-10-19 05:41:06,237 - InfoLog - INFO - Train: [200/462] | Time: 330m 0s | loc_loss: 0.7165 | cls_loss:1.6849 | Loss: 2.6414
+2018-10-19 05:42:20,824 - InfoLog - INFO - Train: [300/462] | Time: 331m 14s | loc_loss: 0.7600 | cls_loss:2.0485 | Loss: 2.6363
+2018-10-19 05:43:39,228 - InfoLog - INFO - Train: [400/462] | Time: 332m 33s | loc_loss: 0.8813 | cls_loss:1.7462 | Loss: 2.6391
+2018-10-19 05:44:19,844 - InfoLog - INFO - Test starts...
+2018-10-19 05:44:49,766 - InfoLog - INFO - Test: [103/104] | Time: 333m 43s | loc_loss: 0.9082 | cls_loss:2.5839 | Loss: 3.0957
+2018-10-19 05:44:50,149 - InfoLog - INFO - ***Saving model***
+2018-10-19 05:44:50,149 - InfoLog - INFO - Epoch :51
+2018-10-19 05:44:58,066 - InfoLog - INFO - Train: [0/462] | Time: 333m 52s | loc_loss: 0.7365 | cls_loss:1.9670 | Loss: 2.7035
+2018-10-19 05:46:15,837 - InfoLog - INFO - Train: [100/462] | Time: 335m 9s | loc_loss: 0.8983 | cls_loss:1.9987 | Loss: 2.6566
+2018-10-19 05:47:27,154 - InfoLog - INFO - Train: [200/462] | Time: 336m 21s | loc_loss: 0.8250 | cls_loss:1.7607 | Loss: 2.6232
+2018-10-19 05:48:45,051 - InfoLog - INFO - Train: [300/462] | Time: 337m 38s | loc_loss: 0.7407 | cls_loss:1.7950 | Loss: 2.6320
+2018-10-19 05:50:00,238 - InfoLog - INFO - Train: [400/462] | Time: 338m 54s | loc_loss: 0.6590 | cls_loss:1.6257 | Loss: 2.6294
+2018-10-19 05:50:49,108 - InfoLog - INFO - Test starts...
+2018-10-19 05:51:19,436 - InfoLog - INFO - Test: [103/104] | Time: 340m 13s | loc_loss: 0.9382 | cls_loss:2.6856 | Loss: 3.1135
+2018-10-19 05:51:19,436 - InfoLog - INFO - Epoch :52
+2018-10-19 05:51:27,563 - InfoLog - INFO - Train: [0/462] | Time: 340m 21s | loc_loss: 0.7455 | cls_loss:1.7218 | Loss: 2.4672
+2018-10-19 05:52:47,330 - InfoLog - INFO - Train: [100/462] | Time: 341m 41s | loc_loss: 0.9149 | cls_loss:1.7609 | Loss: 2.6079
+2018-10-19 05:54:00,236 - InfoLog - INFO - Train: [200/462] | Time: 342m 54s | loc_loss: 0.8557 | cls_loss:1.7898 | Loss: 2.6031
+2018-10-19 05:55:15,738 - InfoLog - INFO - Train: [300/462] | Time: 344m 9s | loc_loss: 0.8029 | cls_loss:1.9997 | Loss: 2.6091
+2018-10-19 05:56:33,190 - InfoLog - INFO - Train: [400/462] | Time: 345m 27s | loc_loss: 0.7492 | cls_loss:1.8222 | Loss: 2.6123
+2018-10-19 05:57:15,068 - InfoLog - INFO - Test starts...
+2018-10-19 05:57:45,557 - InfoLog - INFO - Test: [103/104] | Time: 346m 39s | loc_loss: 0.9365 | cls_loss:2.8457 | Loss: 3.0953
+2018-10-19 05:57:46,000 - InfoLog - INFO - ***Saving model***
+2018-10-19 05:57:46,000 - InfoLog - INFO - Epoch :53
+2018-10-19 05:57:53,779 - InfoLog - INFO - Train: [0/462] | Time: 346m 47s | loc_loss: 0.7425 | cls_loss:1.9471 | Loss: 2.6896
+2018-10-19 05:59:04,934 - InfoLog - INFO - Train: [100/462] | Time: 347m 58s | loc_loss: 0.6957 | cls_loss:1.9139 | Loss: 2.5921
+2018-10-19 06:00:22,771 - InfoLog - INFO - Train: [200/462] | Time: 349m 16s | loc_loss: 0.8086 | cls_loss:1.7692 | Loss: 2.6090
+2018-10-19 06:01:40,015 - InfoLog - INFO - Train: [300/462] | Time: 350m 33s | loc_loss: 0.5488 | cls_loss:1.5872 | Loss: 2.5998
+2018-10-19 06:03:00,777 - InfoLog - INFO - Train: [400/462] | Time: 351m 54s | loc_loss: 0.8611 | cls_loss:2.0552 | Loss: 2.6134
+2018-10-19 06:03:42,102 - InfoLog - INFO - Test starts...
+2018-10-19 06:04:12,298 - InfoLog - INFO - Test: [103/104] | Time: 353m 6s | loc_loss: 0.9185 | cls_loss:2.7468 | Loss: 3.1060
+2018-10-19 06:04:12,299 - InfoLog - INFO - Epoch :54
+2018-10-19 06:04:20,195 - InfoLog - INFO - Train: [0/462] | Time: 353m 14s | loc_loss: 0.7563 | cls_loss:1.7512 | Loss: 2.5075
+2018-10-19 06:05:36,117 - InfoLog - INFO - Train: [100/462] | Time: 354m 30s | loc_loss: 0.7027 | cls_loss:1.6559 | Loss: 2.6391
+2018-10-19 06:06:50,925 - InfoLog - INFO - Train: [200/462] | Time: 355m 44s | loc_loss: 0.8016 | cls_loss:1.9004 | Loss: 2.6190
+2018-10-19 06:08:07,778 - InfoLog - INFO - Train: [300/462] | Time: 357m 1s | loc_loss: 0.5936 | cls_loss:1.7534 | Loss: 2.6155
+2018-10-19 06:09:22,915 - InfoLog - INFO - Train: [400/462] | Time: 358m 16s | loc_loss: 0.8849 | cls_loss:1.7840 | Loss: 2.6189
+2018-10-19 06:10:11,874 - InfoLog - INFO - Test starts...
+2018-10-19 06:10:41,562 - InfoLog - INFO - Test: [103/104] | Time: 359m 35s | loc_loss: 0.9323 | cls_loss:2.7466 | Loss: 3.1484
+2018-10-19 06:10:41,562 - InfoLog - INFO - Epoch :55
+2018-10-19 06:10:49,064 - InfoLog - INFO - Train: [0/462] | Time: 359m 43s | loc_loss: 0.6364 | cls_loss:1.7710 | Loss: 2.4075
+2018-10-19 06:12:11,556 - InfoLog - INFO - Train: [100/462] | Time: 361m 5s | loc_loss: 0.7122 | cls_loss:1.7790 | Loss: 2.5726
+2018-10-19 06:13:28,228 - InfoLog - INFO - Train: [200/462] | Time: 362m 22s | loc_loss: 0.9841 | cls_loss:2.1139 | Loss: 2.5899
+2018-10-19 06:14:47,338 - InfoLog - INFO - Train: [300/462] | Time: 363m 41s | loc_loss: 0.6570 | cls_loss:1.8831 | Loss: 2.5962
+2018-10-19 06:16:03,061 - InfoLog - INFO - Train: [400/462] | Time: 364m 57s | loc_loss: 0.6973 | cls_loss:1.9268 | Loss: 2.6009
+2018-10-19 06:16:48,494 - InfoLog - INFO - Test starts...
+2018-10-19 06:17:18,098 - InfoLog - INFO - Test: [103/104] | Time: 366m 12s | loc_loss: 0.9597 | cls_loss:2.5880 | Loss: 3.1024
+2018-10-19 06:17:18,098 - InfoLog - INFO - Epoch :56
+2018-10-19 06:17:25,972 - InfoLog - INFO - Train: [0/462] | Time: 366m 19s | loc_loss: 0.8562 | cls_loss:1.7431 | Loss: 2.5993
+2018-10-19 06:18:39,177 - InfoLog - INFO - Train: [100/462] | Time: 367m 33s | loc_loss: 0.6303 | cls_loss:1.5631 | Loss: 2.5642
+2018-10-19 06:19:58,388 - InfoLog - INFO - Train: [200/462] | Time: 368m 52s | loc_loss: 0.8587 | cls_loss:1.7438 | Loss: 2.5621
+2018-10-19 06:21:19,664 - InfoLog - INFO - Train: [300/462] | Time: 370m 13s | loc_loss: 0.7382 | cls_loss:1.8018 | Loss: 2.5696
+2018-10-19 06:22:35,002 - InfoLog - INFO - Train: [400/462] | Time: 371m 28s | loc_loss: 0.7700 | cls_loss:1.6914 | Loss: 2.5806
+2018-10-19 06:23:22,194 - InfoLog - INFO - Test starts...
+2018-10-19 06:23:52,306 - InfoLog - INFO - Test: [103/104] | Time: 372m 46s | loc_loss: 0.9984 | cls_loss:2.6920 | Loss: 3.0914
+2018-10-19 06:23:52,798 - InfoLog - INFO - ***Saving model***
+2018-10-19 06:23:52,801 - InfoLog - INFO - Epoch :57
+2018-10-19 06:24:01,109 - InfoLog - INFO - Train: [0/462] | Time: 372m 55s | loc_loss: 0.7726 | cls_loss:1.8328 | Loss: 2.6054
+2018-10-19 06:25:17,386 - InfoLog - INFO - Train: [100/462] | Time: 374m 11s | loc_loss: 0.6988 | cls_loss:1.6015 | Loss: 2.5596
+2018-10-19 06:26:39,943 - InfoLog - INFO - Train: [200/462] | Time: 375m 33s | loc_loss: 0.6101 | cls_loss:1.5885 | Loss: 2.5576
+2018-10-19 06:28:10,234 - InfoLog - INFO - Train: [300/462] | Time: 377m 4s | loc_loss: 0.8407 | cls_loss:1.7543 | Loss: 2.5593
+2018-10-19 06:29:27,430 - InfoLog - INFO - Train: [400/462] | Time: 378m 21s | loc_loss: 0.5804 | cls_loss:1.6647 | Loss: 2.5516
+2018-10-19 06:30:11,908 - InfoLog - INFO - Test starts...
+2018-10-19 06:30:41,614 - InfoLog - INFO - Test: [103/104] | Time: 379m 35s | loc_loss: 0.9692 | cls_loss:2.7239 | Loss: 3.1029
+2018-10-19 06:30:41,615 - InfoLog - INFO - Epoch :58
+2018-10-19 06:30:49,227 - InfoLog - INFO - Train: [0/462] | Time: 379m 43s | loc_loss: 0.6581 | cls_loss:1.6284 | Loss: 2.2865
+2018-10-19 06:32:06,614 - InfoLog - INFO - Train: [100/462] | Time: 381m 0s | loc_loss: 0.7186 | cls_loss:1.9768 | Loss: 2.5122
+2018-10-19 06:33:22,571 - InfoLog - INFO - Train: [200/462] | Time: 382m 16s | loc_loss: 0.9044 | cls_loss:2.0412 | Loss: 2.5340
+2018-10-19 06:34:44,268 - InfoLog - INFO - Train: [300/462] | Time: 383m 38s | loc_loss: 0.8315 | cls_loss:1.7385 | Loss: 2.5315
+2018-10-19 06:35:59,317 - InfoLog - INFO - Train: [400/462] | Time: 384m 53s | loc_loss: 0.7867 | cls_loss:1.6763 | Loss: 2.5370
+2018-10-19 06:36:46,628 - InfoLog - INFO - Test starts...
+2018-10-19 06:37:16,360 - InfoLog - INFO - Test: [103/104] | Time: 386m 10s | loc_loss: 0.8639 | cls_loss:2.8312 | Loss: 3.0797
+2018-10-19 06:37:16,792 - InfoLog - INFO - ***Saving model***
+2018-10-19 06:37:16,792 - InfoLog - INFO - Epoch :59
+2018-10-19 06:37:24,749 - InfoLog - INFO - Train: [0/462] | Time: 386m 18s | loc_loss: 0.7183 | cls_loss:1.8131 | Loss: 2.5314
+2018-10-19 06:38:39,608 - InfoLog - INFO - Train: [100/462] | Time: 387m 33s | loc_loss: 0.6475 | cls_loss:1.8468 | Loss: 2.4950
+2018-10-19 06:39:56,536 - InfoLog - INFO - Train: [200/462] | Time: 388m 50s | loc_loss: 0.7934 | cls_loss:1.9269 | Loss: 2.5245
+2018-10-19 06:41:14,666 - InfoLog - INFO - Train: [300/462] | Time: 390m 8s | loc_loss: 0.8128 | cls_loss:2.0021 | Loss: 2.5258
+2018-10-19 06:42:32,080 - InfoLog - INFO - Train: [400/462] | Time: 391m 26s | loc_loss: 0.6348 | cls_loss:1.7508 | Loss: 2.5361
+2018-10-19 06:43:17,456 - InfoLog - INFO - Test starts...
+2018-10-19 06:43:47,759 - InfoLog - INFO - Test: [103/104] | Time: 392m 41s | loc_loss: 0.8981 | cls_loss:2.5387 | Loss: 3.0927
+2018-10-19 06:43:47,760 - InfoLog - INFO - Epoch :60
+2018-10-19 06:43:55,743 - InfoLog - INFO - Train: [0/462] | Time: 392m 49s | loc_loss: 0.6350 | cls_loss:1.6571 | Loss: 2.2921
+2018-10-19 06:45:12,409 - InfoLog - INFO - Train: [100/462] | Time: 394m 6s | loc_loss: 0.7847 | cls_loss:1.7200 | Loss: 2.5763
+2018-10-19 06:46:33,383 - InfoLog - INFO - Train: [200/462] | Time: 395m 27s | loc_loss: 0.8103 | cls_loss:1.9361 | Loss: 2.5379
+2018-10-19 06:47:48,975 - InfoLog - INFO - Train: [300/462] | Time: 396m 42s | loc_loss: 0.7807 | cls_loss:1.9552 | Loss: 2.5404
+2018-10-19 06:49:06,741 - InfoLog - INFO - Train: [400/462] | Time: 398m 0s | loc_loss: 0.9205 | cls_loss:2.2121 | Loss: 2.5479
+2018-10-19 06:49:50,532 - InfoLog - INFO - Test starts...
+2018-10-19 06:50:21,029 - InfoLog - INFO - Test: [103/104] | Time: 399m 14s | loc_loss: 0.9590 | cls_loss:2.4792 | Loss: 3.0621
+2018-10-19 06:50:21,517 - InfoLog - INFO - ***Saving model***
+2018-10-19 06:50:21,518 - InfoLog - INFO - Epoch :61
+2018-10-19 06:50:28,775 - InfoLog - INFO - Train: [0/462] | Time: 399m 22s | loc_loss: 0.7122 | cls_loss:1.9305 | Loss: 2.6427
+2018-10-19 06:51:43,098 - InfoLog - INFO - Train: [100/462] | Time: 400m 37s | loc_loss: 0.7566 | cls_loss:1.7100 | Loss: 2.5509
+2018-10-19 06:53:01,372 - InfoLog - INFO - Train: [200/462] | Time: 401m 55s | loc_loss: 0.7405 | cls_loss:1.8430 | Loss: 2.5341
+2018-10-19 06:54:22,183 - InfoLog - INFO - Train: [300/462] | Time: 403m 16s | loc_loss: 0.8628 | cls_loss:1.9196 | Loss: 2.5252
+2018-10-19 06:55:38,164 - InfoLog - INFO - Train: [400/462] | Time: 404m 32s | loc_loss: 0.8686 | cls_loss:2.0615 | Loss: 2.5321
+2018-10-19 06:56:21,624 - InfoLog - INFO - Test starts...
+2018-10-19 06:56:51,841 - InfoLog - INFO - Test: [103/104] | Time: 405m 45s | loc_loss: 0.9888 | cls_loss:2.6240 | Loss: 3.1467
+2018-10-19 06:56:51,841 - InfoLog - INFO - Epoch :62
+2018-10-19 06:56:59,553 - InfoLog - INFO - Train: [0/462] | Time: 405m 53s | loc_loss: 0.7886 | cls_loss:1.7747 | Loss: 2.5633
+2018-10-19 06:58:15,038 - InfoLog - INFO - Train: [100/462] | Time: 407m 8s | loc_loss: 0.5384 | cls_loss:1.6583 | Loss: 2.5170
+2018-10-19 06:59:32,887 - InfoLog - INFO - Train: [200/462] | Time: 408m 26s | loc_loss: 0.8760 | cls_loss:1.9267 | Loss: 2.5206
+2018-10-19 07:00:54,272 - InfoLog - INFO - Train: [300/462] | Time: 409m 48s | loc_loss: 0.8461 | cls_loss:2.0075 | Loss: 2.5147
+2018-10-19 07:02:14,532 - InfoLog - INFO - Train: [400/462] | Time: 411m 8s | loc_loss: 0.8620 | cls_loss:2.1345 | Loss: 2.5073
+2018-10-19 07:03:03,846 - InfoLog - INFO - Test starts...
+2018-10-19 07:03:33,447 - InfoLog - INFO - Test: [103/104] | Time: 412m 27s | loc_loss: 1.0122 | cls_loss:2.7274 | Loss: 3.0738
+2018-10-19 07:03:33,448 - InfoLog - INFO - Epoch :63
+2018-10-19 07:03:41,336 - InfoLog - INFO - Train: [0/462] | Time: 412m 35s | loc_loss: 0.7379 | cls_loss:1.7219 | Loss: 2.4599
+2018-10-19 07:05:04,163 - InfoLog - INFO - Train: [100/462] | Time: 413m 58s | loc_loss: 0.7889 | cls_loss:1.7522 | Loss: 2.4858
+2018-10-19 07:06:24,395 - InfoLog - INFO - Train: [200/462] | Time: 415m 18s | loc_loss: 0.8469 | cls_loss:1.9188 | Loss: 2.4895
+2018-10-19 07:07:47,529 - InfoLog - INFO - Train: [300/462] | Time: 416m 41s | loc_loss: 0.9040 | cls_loss:2.0237 | Loss: 2.4929
+2018-10-19 07:08:58,798 - InfoLog - INFO - Train: [400/462] | Time: 417m 52s | loc_loss: 0.7152 | cls_loss:1.8919 | Loss: 2.5000
+2018-10-19 07:09:43,779 - InfoLog - INFO - Test starts...
+2018-10-19 07:10:13,468 - InfoLog - INFO - Test: [103/104] | Time: 419m 7s | loc_loss: 0.9586 | cls_loss:2.7965 | Loss: 3.1029
+2018-10-19 07:10:13,468 - InfoLog - INFO - Epoch :64
+2018-10-19 07:10:21,113 - InfoLog - INFO - Train: [0/462] | Time: 419m 15s | loc_loss: 0.7081 | cls_loss:1.6444 | Loss: 2.3525
+2018-10-19 07:11:36,008 - InfoLog - INFO - Train: [100/462] | Time: 420m 29s | loc_loss: 0.7872 | cls_loss:1.8712 | Loss: 2.4910
+2018-10-19 07:12:58,561 - InfoLog - INFO - Train: [200/462] | Time: 421m 52s | loc_loss: 0.8287 | cls_loss:2.1350 | Loss: 2.4752
+2018-10-19 07:14:24,698 - InfoLog - INFO - Train: [300/462] | Time: 423m 18s | loc_loss: 0.6821 | cls_loss:1.5240 | Loss: 2.4869
+2018-10-19 07:15:52,267 - InfoLog - INFO - Train: [400/462] | Time: 424m 46s | loc_loss: 0.6917 | cls_loss:1.7661 | Loss: 2.4862
+2018-10-19 07:16:34,298 - InfoLog - INFO - Test starts...
+2018-10-19 07:17:03,926 - InfoLog - INFO - Test: [103/104] | Time: 425m 57s | loc_loss: 0.9420 | cls_loss:2.7118 | Loss: 3.0548
+2018-10-19 07:17:04,357 - InfoLog - INFO - ***Saving model***
+2018-10-19 07:17:04,358 - InfoLog - INFO - Epoch :65
+2018-10-19 07:17:12,138 - InfoLog - INFO - Train: [0/462] | Time: 426m 6s | loc_loss: 0.6631 | cls_loss:1.7057 | Loss: 2.3688
+2018-10-19 07:18:25,062 - InfoLog - INFO - Train: [100/462] | Time: 427m 19s | loc_loss: 0.6354 | cls_loss:1.6035 | Loss: 2.5062
+2018-10-19 07:19:41,650 - InfoLog - INFO - Train: [200/462] | Time: 428m 35s | loc_loss: 0.6592 | cls_loss:1.7742 | Loss: 2.4881
+2018-10-19 07:20:52,785 - InfoLog - INFO - Train: [300/462] | Time: 429m 46s | loc_loss: 0.7146 | cls_loss:1.8837 | Loss: 2.4972
+2018-10-19 07:22:09,371 - InfoLog - INFO - Train: [400/462] | Time: 431m 3s | loc_loss: 0.6499 | cls_loss:1.6287 | Loss: 2.4959
+2018-10-19 07:22:54,689 - InfoLog - INFO - Test starts...
+2018-10-19 07:23:23,718 - InfoLog - INFO - Test: [103/104] | Time: 432m 17s | loc_loss: 1.0661 | cls_loss:2.9388 | Loss: 3.0932
+2018-10-19 07:23:23,718 - InfoLog - INFO - Epoch :66
+2018-10-19 07:23:31,616 - InfoLog - INFO - Train: [0/462] | Time: 432m 25s | loc_loss: 0.7027 | cls_loss:1.8252 | Loss: 2.5279
+2018-10-19 07:24:47,460 - InfoLog - INFO - Train: [100/462] | Time: 433m 41s | loc_loss: 0.6812 | cls_loss:1.5258 | Loss: 2.5330
+2018-10-19 07:25:58,643 - InfoLog - INFO - Train: [200/462] | Time: 434m 52s | loc_loss: 0.7862 | cls_loss:1.8243 | Loss: 2.5002
+2018-10-19 07:27:11,987 - InfoLog - INFO - Train: [300/462] | Time: 436m 5s | loc_loss: 1.0043 | cls_loss:2.1035 | Loss: 2.5066
+2018-10-19 07:28:23,235 - InfoLog - INFO - Train: [400/462] | Time: 437m 17s | loc_loss: 0.6802 | cls_loss:1.7367 | Loss: 2.5035
+2018-10-19 07:29:09,244 - InfoLog - INFO - Test starts...
+2018-10-19 07:29:38,289 - InfoLog - INFO - Test: [103/104] | Time: 438m 32s | loc_loss: 1.0399 | cls_loss:2.6411 | Loss: 3.0767
+2018-10-19 07:29:38,290 - InfoLog - INFO - Epoch :67
+2018-10-19 07:29:46,099 - InfoLog - INFO - Train: [0/462] | Time: 438m 40s | loc_loss: 0.8022 | cls_loss:1.8846 | Loss: 2.6868
+2018-10-19 07:31:02,709 - InfoLog - INFO - Train: [100/462] | Time: 439m 56s | loc_loss: 0.8287 | cls_loss:1.8794 | Loss: 2.4915
+2018-10-19 07:32:20,835 - InfoLog - INFO - Train: [200/462] | Time: 441m 14s | loc_loss: 0.6854 | cls_loss:1.8332 | Loss: 2.4630
+2018-10-19 07:33:41,207 - InfoLog - INFO - Train: [300/462] | Time: 442m 35s | loc_loss: 0.7586 | cls_loss:1.7289 | Loss: 2.4661
+2018-10-19 07:35:00,579 - InfoLog - INFO - Train: [400/462] | Time: 443m 54s | loc_loss: 0.5885 | cls_loss:1.6663 | Loss: 2.4640
+2018-10-19 07:35:50,436 - InfoLog - INFO - Test starts...
+2018-10-19 07:36:20,180 - InfoLog - INFO - Test: [103/104] | Time: 445m 14s | loc_loss: 0.9273 | cls_loss:2.6797 | Loss: 3.0606
+2018-10-19 07:36:20,180 - InfoLog - INFO - Epoch :68
+2018-10-19 07:36:28,206 - InfoLog - INFO - Train: [0/462] | Time: 445m 22s | loc_loss: 0.7748 | cls_loss:2.1800 | Loss: 2.9548
+2018-10-19 07:37:50,793 - InfoLog - INFO - Train: [100/462] | Time: 446m 44s | loc_loss: 0.7502 | cls_loss:1.7913 | Loss: 2.5030
+2018-10-19 07:39:09,551 - InfoLog - INFO - Train: [200/462] | Time: 448m 3s | loc_loss: 0.7112 | cls_loss:1.7298 | Loss: 2.4602
+2018-10-19 07:40:25,025 - InfoLog - INFO - Train: [300/462] | Time: 449m 18s | loc_loss: 0.7876 | cls_loss:1.8256 | Loss: 2.4537
+2018-10-19 07:41:38,708 - InfoLog - INFO - Train: [400/462] | Time: 450m 32s | loc_loss: 0.6517 | cls_loss:1.5755 | Loss: 2.4582
+2018-10-19 07:42:24,155 - InfoLog - INFO - Test starts...
+2018-10-19 07:42:53,631 - InfoLog - INFO - Test: [103/104] | Time: 451m 47s | loc_loss: 0.9279 | cls_loss:2.7656 | Loss: 3.0771
+2018-10-19 07:42:53,631 - InfoLog - INFO - Epoch :69
+2018-10-19 07:43:01,328 - InfoLog - INFO - Train: [0/462] | Time: 451m 55s | loc_loss: 0.8033 | cls_loss:1.7365 | Loss: 2.5398
+2018-10-19 07:44:17,636 - InfoLog - INFO - Train: [100/462] | Time: 453m 11s | loc_loss: 0.5871 | cls_loss:1.5288 | Loss: 2.4140
+2018-10-19 07:45:32,147 - InfoLog - INFO - Train: [200/462] | Time: 454m 26s | loc_loss: 0.6925 | cls_loss:1.6846 | Loss: 2.4192
+2018-10-19 07:46:50,473 - InfoLog - INFO - Train: [300/462] | Time: 455m 44s | loc_loss: 0.7806 | cls_loss:1.7633 | Loss: 2.4289
+2018-10-19 07:48:08,959 - InfoLog - INFO - Train: [400/462] | Time: 457m 2s | loc_loss: 0.6703 | cls_loss:1.6666 | Loss: 2.4260
+2018-10-19 07:48:52,732 - InfoLog - INFO - Test starts...
+2018-10-19 07:49:22,681 - InfoLog - INFO - Test: [103/104] | Time: 458m 16s | loc_loss: 1.0370 | cls_loss:2.6618 | Loss: 3.0564
+2018-10-19 07:49:22,682 - InfoLog - INFO - Epoch :70
+2018-10-19 07:49:30,981 - InfoLog - INFO - Train: [0/462] | Time: 458m 24s | loc_loss: 0.5498 | cls_loss:1.5507 | Loss: 2.1005
+2018-10-19 07:50:51,137 - InfoLog - INFO - Train: [100/462] | Time: 459m 45s | loc_loss: 0.7701 | cls_loss:1.9459 | Loss: 2.4448
+2018-10-19 07:52:06,166 - InfoLog - INFO - Train: [200/462] | Time: 461m 0s | loc_loss: 0.7949 | cls_loss:1.7979 | Loss: 2.4108
+2018-10-19 07:53:24,176 - InfoLog - INFO - Train: [300/462] | Time: 462m 18s | loc_loss: 0.8837 | cls_loss:2.1669 | Loss: 2.4322
+2018-10-19 07:54:40,664 - InfoLog - INFO - Train: [400/462] | Time: 463m 34s | loc_loss: 0.7922 | cls_loss:1.8966 | Loss: 2.4364
+2018-10-19 07:55:25,819 - InfoLog - INFO - Test starts...
+2018-10-19 07:55:55,475 - InfoLog - INFO - Test: [103/104] | Time: 464m 49s | loc_loss: 1.0077 | cls_loss:2.8261 | Loss: 3.0527
+2018-10-19 07:55:56,469 - InfoLog - INFO - ***Saving model***
+2018-10-19 07:55:56,469 - InfoLog - INFO - Epoch :71
+2018-10-19 07:56:05,260 - InfoLog - INFO - Train: [0/462] | Time: 464m 59s | loc_loss: 0.7804 | cls_loss:1.8844 | Loss: 2.6648
+2018-10-19 07:57:21,633 - InfoLog - INFO - Train: [100/462] | Time: 466m 15s | loc_loss: 0.6856 | cls_loss:1.8475 | Loss: 2.4439
+2018-10-19 07:58:42,038 - InfoLog - INFO - Train: [200/462] | Time: 467m 35s | loc_loss: 0.7667 | cls_loss:1.8606 | Loss: 2.4338
+2018-10-19 07:59:54,295 - InfoLog - INFO - Train: [300/462] | Time: 468m 48s | loc_loss: 0.5966 | cls_loss:1.6391 | Loss: 2.4347
+2018-10-19 08:01:10,109 - InfoLog - INFO - Train: [400/462] | Time: 470m 4s | loc_loss: 0.7869 | cls_loss:2.0012 | Loss: 2.4326
+2018-10-19 08:01:54,803 - InfoLog - INFO - Test starts...
+2018-10-19 08:02:23,885 - InfoLog - INFO - Test: [103/104] | Time: 471m 17s | loc_loss: 0.9068 | cls_loss:2.9181 | Loss: 3.0697
+2018-10-19 08:02:23,885 - InfoLog - INFO - Epoch :72
+2018-10-19 08:02:31,389 - InfoLog - INFO - Train: [0/462] | Time: 471m 25s | loc_loss: 0.6757 | cls_loss:1.6092 | Loss: 2.2849
+2018-10-19 08:03:49,734 - InfoLog - INFO - Train: [100/462] | Time: 472m 43s | loc_loss: 0.8526 | cls_loss:1.7712 | Loss: 2.4268
+2018-10-19 08:05:02,321 - InfoLog - INFO - Train: [200/462] | Time: 473m 56s | loc_loss: 0.6509 | cls_loss:1.7143 | Loss: 2.4287
+2018-10-19 08:06:22,060 - InfoLog - INFO - Train: [300/462] | Time: 475m 16s | loc_loss: 0.7755 | cls_loss:1.8540 | Loss: 2.4236
+2018-10-19 08:07:43,197 - InfoLog - INFO - Train: [400/462] | Time: 476m 37s | loc_loss: 0.6599 | cls_loss:1.5612 | Loss: 2.4148
+2018-10-19 08:08:28,304 - InfoLog - INFO - Test starts...
+2018-10-19 08:08:58,204 - InfoLog - INFO - Test: [103/104] | Time: 477m 52s | loc_loss: 0.9274 | cls_loss:2.7590 | Loss: 3.1099
+2018-10-19 08:08:58,205 - InfoLog - INFO - Epoch :73
+2018-10-19 08:09:06,717 - InfoLog - INFO - Train: [0/462] | Time: 478m 0s | loc_loss: 0.8047 | cls_loss:1.9258 | Loss: 2.7304
+2018-10-19 08:10:22,530 - InfoLog - INFO - Train: [100/462] | Time: 479m 16s | loc_loss: 0.6034 | cls_loss:1.5999 | Loss: 2.4327
+2018-10-19 08:11:39,079 - InfoLog - INFO - Train: [200/462] | Time: 480m 33s | loc_loss: 0.6522 | cls_loss:1.4613 | Loss: 2.4254
+2018-10-19 08:12:54,247 - InfoLog - INFO - Train: [300/462] | Time: 481m 48s | loc_loss: 0.6222 | cls_loss:1.8387 | Loss: 2.4322
+2018-10-19 08:14:07,748 - InfoLog - INFO - Train: [400/462] | Time: 483m 1s | loc_loss: 0.4870 | cls_loss:1.3946 | Loss: 2.4205
+2018-10-19 08:14:55,481 - InfoLog - INFO - Test starts...
+2018-10-19 08:15:25,822 - InfoLog - INFO - Test: [103/104] | Time: 484m 19s | loc_loss: 0.9752 | cls_loss:2.8564 | Loss: 3.0190
+2018-10-19 08:15:26,258 - InfoLog - INFO - ***Saving model***
+2018-10-19 08:15:26,259 - InfoLog - INFO - Epoch :74
+2018-10-19 08:15:34,366 - InfoLog - INFO - Train: [0/462] | Time: 484m 28s | loc_loss: 0.5645 | cls_loss:1.4753 | Loss: 2.0398
+2018-10-19 08:16:54,917 - InfoLog - INFO - Train: [100/462] | Time: 485m 48s | loc_loss: 0.6607 | cls_loss:1.7289 | Loss: 2.3840
+2018-10-19 08:18:06,438 - InfoLog - INFO - Train: [200/462] | Time: 487m 0s | loc_loss: 0.6072 | cls_loss:1.6464 | Loss: 2.3989
+2018-10-19 08:19:23,420 - InfoLog - INFO - Train: [300/462] | Time: 488m 17s | loc_loss: 0.6069 | cls_loss:1.4814 | Loss: 2.4034
+2018-10-19 08:20:38,685 - InfoLog - INFO - Train: [400/462] | Time: 489m 32s | loc_loss: 0.5008 | cls_loss:1.5832 | Loss: 2.4003
+2018-10-19 08:21:21,702 - InfoLog - INFO - Test starts...
+2018-10-19 08:21:50,419 - InfoLog - INFO - Test: [103/104] | Time: 490m 44s | loc_loss: 0.9308 | cls_loss:2.5520 | Loss: 3.0490
+2018-10-19 08:21:50,420 - InfoLog - INFO - Epoch :75
+2018-10-19 08:21:58,457 - InfoLog - INFO - Train: [0/462] | Time: 490m 52s | loc_loss: 0.7953 | cls_loss:1.7734 | Loss: 2.5687
+2018-10-19 08:23:12,975 - InfoLog - INFO - Train: [100/462] | Time: 492m 6s | loc_loss: 0.6205 | cls_loss:1.8344 | Loss: 2.4031
+2018-10-19 08:24:38,179 - InfoLog - INFO - Train: [200/462] | Time: 493m 32s | loc_loss: 0.6027 | cls_loss:1.7932 | Loss: 2.3925
+2018-10-19 08:26:06,658 - InfoLog - INFO - Train: [300/462] | Time: 495m 0s | loc_loss: 0.6124 | cls_loss:1.5298 | Loss: 2.3973
+2018-10-19 08:27:27,874 - InfoLog - INFO - Train: [400/462] | Time: 496m 21s | loc_loss: 0.6022 | cls_loss:1.6599 | Loss: 2.3967
+2018-10-19 08:28:12,238 - InfoLog - INFO - Test starts...
+2018-10-19 08:28:42,494 - InfoLog - INFO - Test: [103/104] | Time: 497m 36s | loc_loss: 0.9864 | cls_loss:2.8727 | Loss: 3.0437
+2018-10-19 08:28:42,495 - InfoLog - INFO - Epoch :76
+2018-10-19 08:28:50,651 - InfoLog - INFO - Train: [0/462] | Time: 497m 44s | loc_loss: 0.6555 | cls_loss:1.6428 | Loss: 2.2983
+2018-10-19 08:30:02,003 - InfoLog - INFO - Train: [100/462] | Time: 498m 55s | loc_loss: 0.7011 | cls_loss:1.6403 | Loss: 2.4320
+2018-10-19 08:31:15,709 - InfoLog - INFO - Train: [200/462] | Time: 500m 9s | loc_loss: 0.7811 | cls_loss:1.7368 | Loss: 2.4088
+2018-10-19 08:32:32,620 - InfoLog - INFO - Train: [300/462] | Time: 501m 26s | loc_loss: 0.5615 | cls_loss:1.4996 | Loss: 2.4028
+2018-10-19 08:33:56,179 - InfoLog - INFO - Train: [400/462] | Time: 502m 50s | loc_loss: 0.8237 | cls_loss:2.1422 | Loss: 2.4027
+2018-10-19 08:34:50,203 - InfoLog - INFO - Test starts...
+2018-10-19 08:35:20,442 - InfoLog - INFO - Test: [103/104] | Time: 504m 14s | loc_loss: 1.0617 | cls_loss:2.8794 | Loss: 3.1159
+2018-10-19 08:35:20,442 - InfoLog - INFO - Epoch :77
+2018-10-19 08:35:28,234 - InfoLog - INFO - Train: [0/462] | Time: 504m 22s | loc_loss: 0.6702 | cls_loss:1.5664 | Loss: 2.2366
+2018-10-19 08:36:51,696 - InfoLog - INFO - Train: [100/462] | Time: 505m 45s | loc_loss: 0.5379 | cls_loss:1.3494 | Loss: 2.3918
+2018-10-19 08:38:13,183 - InfoLog - INFO - Train: [200/462] | Time: 507m 7s | loc_loss: 0.6800 | cls_loss:1.8493 | Loss: 2.3740
+2018-10-19 08:39:28,757 - InfoLog - INFO - Train: [300/462] | Time: 508m 22s | loc_loss: 0.7342 | cls_loss:1.7218 | Loss: 2.3654
+2018-10-19 08:40:44,091 - InfoLog - INFO - Train: [400/462] | Time: 509m 38s | loc_loss: 0.6245 | cls_loss:1.6240 | Loss: 2.3635
+2018-10-19 08:41:30,713 - InfoLog - INFO - Test starts...
+2018-10-19 08:42:00,233 - InfoLog - INFO - Test: [103/104] | Time: 510m 54s | loc_loss: 0.9923 | cls_loss:2.8136 | Loss: 3.0821
+2018-10-19 08:42:00,234 - InfoLog - INFO - Epoch :78
+2018-10-19 08:42:09,120 - InfoLog - INFO - Train: [0/462] | Time: 511m 3s | loc_loss: 0.7448 | cls_loss:1.6838 | Loss: 2.4286
+2018-10-19 08:43:19,826 - InfoLog - INFO - Train: [100/462] | Time: 512m 13s | loc_loss: 0.8633 | cls_loss:1.9363 | Loss: 2.3676
+2018-10-19 08:44:32,560 - InfoLog - INFO - Train: [200/462] | Time: 513m 26s | loc_loss: 0.7464 | cls_loss:1.6920 | Loss: 2.3692
+2018-10-19 08:45:45,179 - InfoLog - INFO - Train: [300/462] | Time: 514m 39s | loc_loss: 0.5779 | cls_loss:1.5919 | Loss: 2.3669
+2018-10-19 08:47:02,381 - InfoLog - INFO - Train: [400/462] | Time: 515m 56s | loc_loss: 0.6527 | cls_loss:1.6404 | Loss: 2.3754
+2018-10-19 08:47:45,846 - InfoLog - INFO - Test starts...
+2018-10-19 08:48:15,635 - InfoLog - INFO - Test: [103/104] | Time: 517m 9s | loc_loss: 0.9537 | cls_loss:2.6721 | Loss: 3.0978
+2018-10-19 08:48:15,636 - InfoLog - INFO - Epoch :79
+2018-10-19 08:48:23,484 - InfoLog - INFO - Train: [0/462] | Time: 517m 17s | loc_loss: 0.6392 | cls_loss:1.4421 | Loss: 2.0813
+2018-10-19 08:49:42,535 - InfoLog - INFO - Train: [100/462] | Time: 518m 36s | loc_loss: 0.8690 | cls_loss:1.8198 | Loss: 2.3277
+2018-10-19 08:51:00,218 - InfoLog - INFO - Train: [200/462] | Time: 519m 54s | loc_loss: 0.8481 | cls_loss:1.7539 | Loss: 2.3683
+2018-10-19 08:52:22,417 - InfoLog - INFO - Train: [300/462] | Time: 521m 16s | loc_loss: 0.8041 | cls_loss:1.7605 | Loss: 2.3691
+2018-10-19 08:53:44,708 - InfoLog - INFO - Train: [400/462] | Time: 522m 38s | loc_loss: 0.6774 | cls_loss:1.5086 | Loss: 2.3791
+2018-10-19 08:54:30,334 - InfoLog - INFO - Test starts...
+2018-10-19 08:55:01,173 - InfoLog - INFO - Test: [103/104] | Time: 523m 55s | loc_loss: 1.1290 | cls_loss:2.7714 | Loss: 3.0789
+2018-10-19 08:55:01,173 - InfoLog - INFO - Epoch :80
+2018-10-19 08:55:09,445 - InfoLog - INFO - Train: [0/462] | Time: 524m 3s | loc_loss: 0.7157 | cls_loss:1.7093 | Loss: 2.4251
+2018-10-19 08:56:25,680 - InfoLog - INFO - Train: [100/462] | Time: 525m 19s | loc_loss: 0.5998 | cls_loss:1.5353 | Loss: 2.3270
+2018-10-19 08:57:39,127 - InfoLog - INFO - Train: [200/462] | Time: 526m 33s | loc_loss: 0.8057 | cls_loss:1.6328 | Loss: 2.3359
+2018-10-19 08:58:50,701 - InfoLog - INFO - Train: [300/462] | Time: 527m 44s | loc_loss: 0.6838 | cls_loss:1.6441 | Loss: 2.3376
+2018-10-19 09:00:04,450 - InfoLog - INFO - Train: [400/462] | Time: 528m 58s | loc_loss: 0.5211 | cls_loss:1.5060 | Loss: 2.3543
+2018-10-19 09:00:51,091 - InfoLog - INFO - Test starts...
+2018-10-19 09:01:20,955 - InfoLog - INFO - Test: [103/104] | Time: 530m 14s | loc_loss: 0.9929 | cls_loss:2.6724 | Loss: 3.1204
+2018-10-19 09:01:20,956 - InfoLog - INFO - Epoch :81
+2018-10-19 09:01:29,049 - InfoLog - INFO - Train: [0/462] | Time: 530m 22s | loc_loss: 0.4819 | cls_loss:1.4686 | Loss: 1.9504
+2018-10-19 09:02:47,223 - InfoLog - INFO - Train: [100/462] | Time: 531m 41s | loc_loss: 0.7221 | cls_loss:1.9734 | Loss: 2.3842
+2018-10-19 09:04:08,850 - InfoLog - INFO - Train: [200/462] | Time: 533m 2s | loc_loss: 0.7638 | cls_loss:1.7049 | Loss: 2.3784
+2018-10-19 09:05:22,961 - InfoLog - INFO - Train: [300/462] | Time: 534m 16s | loc_loss: 0.6814 | cls_loss:1.6782 | Loss: 2.3721
+2018-10-19 09:06:38,229 - InfoLog - INFO - Train: [400/462] | Time: 535m 32s | loc_loss: 0.7169 | cls_loss:1.6853 | Loss: 2.3579
+2018-10-19 09:07:21,981 - InfoLog - INFO - Test starts...
+2018-10-19 09:07:52,179 - InfoLog - INFO - Test: [103/104] | Time: 536m 46s | loc_loss: 0.9329 | cls_loss:2.6620 | Loss: 3.0538
+2018-10-19 09:07:52,179 - InfoLog - INFO - Epoch :82
+2018-10-19 09:07:59,550 - InfoLog - INFO - Train: [0/462] | Time: 536m 53s | loc_loss: 0.6279 | cls_loss:1.6424 | Loss: 2.2703
+2018-10-19 09:09:16,893 - InfoLog - INFO - Train: [100/462] | Time: 538m 10s | loc_loss: 0.7599 | cls_loss:1.7845 | Loss: 2.3979
+2018-10-19 09:10:31,779 - InfoLog - INFO - Train: [200/462] | Time: 539m 25s | loc_loss: 0.6782 | cls_loss:1.6737 | Loss: 2.3489
+2018-10-19 09:11:51,862 - InfoLog - INFO - Train: [300/462] | Time: 540m 45s | loc_loss: 0.7439 | cls_loss:1.7170 | Loss: 2.3570
+2018-10-19 09:13:06,774 - InfoLog - INFO - Train: [400/462] | Time: 542m 0s | loc_loss: 0.6810 | cls_loss:1.9551 | Loss: 2.3568
+2018-10-19 09:13:53,338 - InfoLog - INFO - Test starts...
+2018-10-19 09:14:23,695 - InfoLog - INFO - Test: [103/104] | Time: 543m 17s | loc_loss: 0.9539 | cls_loss:2.6993 | Loss: 3.0836
+2018-10-19 09:14:23,695 - InfoLog - INFO - Epoch :83
+2018-10-19 09:14:32,088 - InfoLog - INFO - Train: [0/462] | Time: 543m 26s | loc_loss: 0.8750 | cls_loss:1.8739 | Loss: 2.7489
+2018-10-19 09:15:47,728 - InfoLog - INFO - Train: [100/462] | Time: 544m 41s | loc_loss: 0.6720 | cls_loss:1.6152 | Loss: 2.3543
+2018-10-19 09:17:03,999 - InfoLog - INFO - Train: [200/462] | Time: 545m 57s | loc_loss: 0.7457 | cls_loss:1.6569 | Loss: 2.3455
+2018-10-19 09:18:25,737 - InfoLog - INFO - Train: [300/462] | Time: 547m 19s | loc_loss: 0.5543 | cls_loss:1.6113 | Loss: 2.3346
+2018-10-19 09:19:40,376 - InfoLog - INFO - Train: [400/462] | Time: 548m 34s | loc_loss: 0.8243 | cls_loss:1.9414 | Loss: 2.3449
+2018-10-19 09:20:28,901 - InfoLog - INFO - Test starts...
+2018-10-19 09:20:58,584 - InfoLog - INFO - Test: [103/104] | Time: 549m 52s | loc_loss: 0.9431 | cls_loss:2.7787 | Loss: 3.0357
+2018-10-19 09:20:58,584 - InfoLog - INFO - Epoch :84
+2018-10-19 09:21:06,795 - InfoLog - INFO - Train: [0/462] | Time: 550m 0s | loc_loss: 0.8447 | cls_loss:1.8899 | Loss: 2.7346
+2018-10-19 09:22:18,358 - InfoLog - INFO - Train: [100/462] | Time: 551m 12s | loc_loss: 0.6769 | cls_loss:1.8526 | Loss: 2.3375
+2018-10-19 09:23:37,654 - InfoLog - INFO - Train: [200/462] | Time: 552m 31s | loc_loss: 0.8090 | cls_loss:1.9125 | Loss: 2.3396
+2018-10-19 09:24:51,321 - InfoLog - INFO - Train: [300/462] | Time: 553m 45s | loc_loss: 0.6464 | cls_loss:1.5731 | Loss: 2.3305
+2018-10-19 09:26:09,198 - InfoLog - INFO - Train: [400/462] | Time: 555m 3s | loc_loss: 0.6085 | cls_loss:1.5576 | Loss: 2.3425
+2018-10-19 09:26:52,028 - InfoLog - INFO - Test starts...
+2018-10-19 09:27:21,849 - InfoLog - INFO - Test: [103/104] | Time: 556m 15s | loc_loss: 0.9036 | cls_loss:2.8733 | Loss: 3.1054
+2018-10-19 09:27:21,850 - InfoLog - INFO - Epoch :85
+2018-10-19 09:27:29,952 - InfoLog - INFO - Train: [0/462] | Time: 556m 23s | loc_loss: 0.6396 | cls_loss:1.4302 | Loss: 2.0698
+2018-10-19 09:28:46,508 - InfoLog - INFO - Train: [100/462] | Time: 557m 40s | loc_loss: 0.6793 | cls_loss:1.5232 | Loss: 2.3600
+2018-10-19 09:30:03,701 - InfoLog - INFO - Train: [200/462] | Time: 558m 57s | loc_loss: 0.5989 | cls_loss:1.6747 | Loss: 2.3446
+2018-10-19 09:31:34,034 - InfoLog - INFO - Train: [300/462] | Time: 560m 27s | loc_loss: 0.6846 | cls_loss:1.5972 | Loss: 2.3481
+2018-10-19 09:33:15,682 - InfoLog - INFO - Train: [400/462] | Time: 562m 9s | loc_loss: 0.4692 | cls_loss:1.3467 | Loss: 2.3284
+2018-10-19 09:34:15,554 - InfoLog - INFO - Test starts...
+2018-10-19 09:34:52,554 - InfoLog - INFO - Test: [103/104] | Time: 563m 46s | loc_loss: 0.9170 | cls_loss:2.7892 | Loss: 3.0589
+2018-10-19 09:34:52,555 - InfoLog - INFO - Epoch :86
+2018-10-19 09:35:02,313 - InfoLog - INFO - Train: [0/462] | Time: 563m 56s | loc_loss: 0.6885 | cls_loss:1.8320 | Loss: 2.5205
+2018-10-19 09:36:40,157 - InfoLog - INFO - Train: [100/462] | Time: 565m 34s | loc_loss: 0.4902 | cls_loss:1.4503 | Loss: 2.3395
+2018-10-19 09:38:12,843 - InfoLog - INFO - Train: [200/462] | Time: 567m 6s | loc_loss: 0.6626 | cls_loss:1.6224 | Loss: 2.3060
+2018-10-19 09:39:53,362 - InfoLog - INFO - Train: [300/462] | Time: 568m 47s | loc_loss: 0.6249 | cls_loss:1.6319 | Loss: 2.3172
+2018-10-19 09:41:30,724 - InfoLog - INFO - Train: [400/462] | Time: 570m 24s | loc_loss: 0.5755 | cls_loss:1.5927 | Loss: 2.3259
+2018-10-19 09:42:33,834 - InfoLog - INFO - Test starts...
+2018-10-19 09:43:08,472 - InfoLog - INFO - Test: [103/104] | Time: 572m 2s | loc_loss: 0.9944 | cls_loss:2.7376 | Loss: 3.1265
+2018-10-19 09:43:08,473 - InfoLog - INFO - Epoch :87
+2018-10-19 09:43:16,166 - InfoLog - INFO - Train: [0/462] | Time: 572m 10s | loc_loss: 0.5326 | cls_loss:1.4918 | Loss: 2.0244
+2018-10-19 09:44:35,038 - InfoLog - INFO - Train: [100/462] | Time: 573m 28s | loc_loss: 0.7474 | cls_loss:1.8114 | Loss: 2.2895
+2018-10-19 09:46:00,206 - InfoLog - INFO - Train: [200/462] | Time: 574m 54s | loc_loss: 0.7359 | cls_loss:1.8148 | Loss: 2.2868
+2018-10-19 09:47:21,388 - InfoLog - INFO - Train: [300/462] | Time: 576m 15s | loc_loss: 0.6032 | cls_loss:1.5305 | Loss: 2.3094
+2018-10-19 09:48:40,497 - InfoLog - INFO - Train: [400/462] | Time: 577m 34s | loc_loss: 0.7555 | cls_loss:1.8849 | Loss: 2.3081
+2018-10-19 09:49:34,790 - InfoLog - INFO - Test starts...
+2018-10-19 09:50:04,074 - InfoLog - INFO - Test: [103/104] | Time: 578m 58s | loc_loss: 1.0578 | cls_loss:2.7300 | Loss: 3.0291
+2018-10-19 09:50:04,075 - InfoLog - INFO - Epoch :88
+2018-10-19 09:50:12,269 - InfoLog - INFO - Train: [0/462] | Time: 579m 6s | loc_loss: 0.4583 | cls_loss:1.4080 | Loss: 1.8663
+2018-10-19 09:51:30,732 - InfoLog - INFO - Train: [100/462] | Time: 580m 24s | loc_loss: 0.6769 | cls_loss:1.6432 | Loss: 2.2692
+2018-10-19 09:52:49,093 - InfoLog - INFO - Train: [200/462] | Time: 581m 43s | loc_loss: 0.6381 | cls_loss:1.4993 | Loss: 2.2868
+2018-10-19 09:54:07,398 - InfoLog - INFO - Train: [300/462] | Time: 583m 1s | loc_loss: 0.6590 | cls_loss:1.6075 | Loss: 2.3052
+2018-10-19 09:55:24,015 - InfoLog - INFO - Train: [400/462] | Time: 584m 17s | loc_loss: 0.6397 | cls_loss:1.5041 | Loss: 2.3081
+2018-10-19 09:56:11,728 - InfoLog - INFO - Test starts...
+2018-10-19 09:56:41,712 - InfoLog - INFO - Test: [103/104] | Time: 585m 35s | loc_loss: 1.0064 | cls_loss:2.7180 | Loss: 3.0972
+2018-10-19 09:56:41,713 - InfoLog - INFO - Epoch :89
+2018-10-19 09:56:49,631 - InfoLog - INFO - Train: [0/462] | Time: 585m 43s | loc_loss: 0.7315 | cls_loss:1.9164 | Loss: 2.6479
+2018-10-19 09:58:09,910 - InfoLog - INFO - Train: [100/462] | Time: 587m 3s | loc_loss: 0.7098 | cls_loss:1.8050 | Loss: 2.3448
+2018-10-19 09:59:28,138 - InfoLog - INFO - Train: [200/462] | Time: 588m 22s | loc_loss: 0.6447 | cls_loss:1.5257 | Loss: 2.3120
+2018-10-19 10:00:47,929 - InfoLog - INFO - Train: [300/462] | Time: 589m 41s | loc_loss: 0.7464 | cls_loss:1.7238 | Loss: 2.3094
+2018-10-19 10:02:03,576 - InfoLog - INFO - Train: [400/462] | Time: 590m 57s | loc_loss: 0.7073 | cls_loss:1.6659 | Loss: 2.3171
+2018-10-19 10:02:51,339 - InfoLog - INFO - Test starts...
+2018-10-19 10:03:22,448 - InfoLog - INFO - Test: [103/104] | Time: 592m 16s | loc_loss: 1.0071 | cls_loss:2.5977 | Loss: 3.0482
+2018-10-19 10:03:22,448 - InfoLog - INFO - Epoch :90
+2018-10-19 10:03:30,919 - InfoLog - INFO - Train: [0/462] | Time: 592m 24s | loc_loss: 0.7171 | cls_loss:1.7683 | Loss: 2.4854
+2018-10-19 10:04:45,680 - InfoLog - INFO - Train: [100/462] | Time: 593m 39s | loc_loss: 0.6279 | cls_loss:1.5514 | Loss: 2.2986
+2018-10-19 10:06:01,855 - InfoLog - INFO - Train: [200/462] | Time: 594m 55s | loc_loss: 0.5983 | cls_loss:1.5203 | Loss: 2.3080
+2018-10-19 10:07:20,602 - InfoLog - INFO - Train: [300/462] | Time: 596m 14s | loc_loss: 0.7373 | cls_loss:1.7383 | Loss: 2.3033
+2018-10-19 10:08:37,719 - InfoLog - INFO - Train: [400/462] | Time: 597m 31s | loc_loss: 0.6585 | cls_loss:1.6662 | Loss: 2.3034
+2018-10-19 10:09:26,157 - InfoLog - INFO - Test starts...
+2018-10-19 10:09:56,518 - InfoLog - INFO - Test: [103/104] | Time: 598m 50s | loc_loss: 0.9326 | cls_loss:2.4129 | Loss: 3.0843
+2018-10-19 10:09:56,519 - InfoLog - INFO - Epoch :91
+2018-10-19 10:10:05,186 - InfoLog - INFO - Train: [0/462] | Time: 598m 59s | loc_loss: 0.6213 | cls_loss:1.5922 | Loss: 2.2135
+2018-10-19 10:11:24,943 - InfoLog - INFO - Train: [100/462] | Time: 600m 18s | loc_loss: 0.6715 | cls_loss:1.5721 | Loss: 2.3383
+2018-10-19 10:12:42,728 - InfoLog - INFO - Train: [200/462] | Time: 601m 36s | loc_loss: 0.5885 | cls_loss:1.4520 | Loss: 2.2942
+2018-10-19 10:13:59,520 - InfoLog - INFO - Train: [300/462] | Time: 602m 53s | loc_loss: 0.6491 | cls_loss:1.5973 | Loss: 2.2777
+2018-10-19 10:15:19,720 - InfoLog - INFO - Train: [400/462] | Time: 604m 13s | loc_loss: 0.5422 | cls_loss:1.5635 | Loss: 2.2753
+2018-10-19 10:16:05,471 - InfoLog - INFO - Test starts...
+2018-10-19 10:16:34,805 - InfoLog - INFO - Test: [103/104] | Time: 605m 28s | loc_loss: 0.9919 | cls_loss:2.6750 | Loss: 3.0707
+2018-10-19 10:16:34,805 - InfoLog - INFO - Epoch :92
+2018-10-19 10:16:42,467 - InfoLog - INFO - Train: [0/462] | Time: 605m 36s | loc_loss: 0.6202 | cls_loss:1.5249 | Loss: 2.1451
+2018-10-19 10:17:58,869 - InfoLog - INFO - Train: [100/462] | Time: 606m 52s | loc_loss: 0.7523 | cls_loss:1.8532 | Loss: 2.2925
+2018-10-19 10:19:15,466 - InfoLog - INFO - Train: [200/462] | Time: 608m 9s | loc_loss: 0.6790 | cls_loss:1.8378 | Loss: 2.2635
+2018-10-19 10:20:30,537 - InfoLog - INFO - Train: [300/462] | Time: 609m 24s | loc_loss: 0.6609 | cls_loss:1.7641 | Loss: 2.2712
+2018-10-19 10:21:51,326 - InfoLog - INFO - Train: [400/462] | Time: 610m 45s | loc_loss: 0.5877 | cls_loss:1.4760 | Loss: 2.2751
+2018-10-19 10:22:37,492 - InfoLog - INFO - Test starts...
+2018-10-19 10:23:07,963 - InfoLog - INFO - Test: [103/104] | Time: 612m 1s | loc_loss: 0.9956 | cls_loss:2.7163 | Loss: 3.0795
+2018-10-19 10:23:07,964 - InfoLog - INFO - Epoch :93
+2018-10-19 10:23:16,998 - InfoLog - INFO - Train: [0/462] | Time: 612m 10s | loc_loss: 0.5618 | cls_loss:1.4358 | Loss: 1.9976
+2018-10-19 10:24:35,842 - InfoLog - INFO - Train: [100/462] | Time: 613m 29s | loc_loss: 0.5931 | cls_loss:1.5605 | Loss: 2.2633
+2018-10-19 10:25:52,921 - InfoLog - INFO - Train: [200/462] | Time: 614m 46s | loc_loss: 0.6572 | cls_loss:1.5806 | Loss: 2.2624
+2018-10-19 10:27:14,097 - InfoLog - INFO - Train: [300/462] | Time: 616m 8s | loc_loss: 0.7089 | cls_loss:1.6551 | Loss: 2.2802
+2018-10-19 10:28:38,520 - InfoLog - INFO - Train: [400/462] | Time: 617m 32s | loc_loss: 0.6694 | cls_loss:1.6478 | Loss: 2.2755
+2018-10-19 10:29:27,318 - InfoLog - INFO - Test starts...
+2018-10-19 10:30:00,251 - InfoLog - INFO - Test: [103/104] | Time: 618m 54s | loc_loss: 0.9218 | cls_loss:2.4049 | Loss: 3.0967
+2018-10-19 10:30:00,252 - InfoLog - INFO - Epoch :94
+2018-10-19 10:30:08,653 - InfoLog - INFO - Train: [0/462] | Time: 619m 2s | loc_loss: 0.6290 | cls_loss:1.6148 | Loss: 2.2438
+2018-10-19 10:31:28,356 - InfoLog - INFO - Train: [100/462] | Time: 620m 22s | loc_loss: 0.6240 | cls_loss:1.5747 | Loss: 2.2587
+2018-10-19 10:32:48,467 - InfoLog - INFO - Train: [200/462] | Time: 621m 42s | loc_loss: 0.7978 | cls_loss:1.6028 | Loss: 2.2674
+2018-10-19 10:34:04,929 - InfoLog - INFO - Train: [300/462] | Time: 622m 58s | loc_loss: 0.7294 | cls_loss:1.6994 | Loss: 2.2711
+2018-10-19 10:35:23,478 - InfoLog - INFO - Train: [400/462] | Time: 624m 17s | loc_loss: 0.6149 | cls_loss:1.6181 | Loss: 2.2767
+2018-10-19 10:36:08,597 - InfoLog - INFO - Test starts...
+2018-10-19 10:36:38,859 - InfoLog - INFO - Test: [103/104] | Time: 625m 32s | loc_loss: 0.9741 | cls_loss:2.8003 | Loss: 3.0696
+2018-10-19 10:36:38,860 - InfoLog - INFO - Epoch :95
+2018-10-19 10:36:46,842 - InfoLog - INFO - Train: [0/462] | Time: 625m 40s | loc_loss: 0.6477 | cls_loss:1.7288 | Loss: 2.3765
+2018-10-19 10:38:01,858 - InfoLog - INFO - Train: [100/462] | Time: 626m 55s | loc_loss: 0.8409 | cls_loss:1.8115 | Loss: 2.2855
+2018-10-19 10:39:16,369 - InfoLog - INFO - Train: [200/462] | Time: 628m 10s | loc_loss: 0.9292 | cls_loss:1.9099 | Loss: 2.2850
+2018-10-19 10:40:39,085 - InfoLog - INFO - Train: [300/462] | Time: 629m 33s | loc_loss: 0.6454 | cls_loss:1.6186 | Loss: 2.2772
+2018-10-19 10:41:57,001 - InfoLog - INFO - Train: [400/462] | Time: 630m 50s | loc_loss: 0.6217 | cls_loss:1.4606 | Loss: 2.2825
+2018-10-19 10:42:43,278 - InfoLog - INFO - Test starts...
+2018-10-19 10:43:13,491 - InfoLog - INFO - Test: [103/104] | Time: 632m 7s | loc_loss: 0.9393 | cls_loss:2.6001 | Loss: 3.0771
+2018-10-19 10:43:13,491 - InfoLog - INFO - Epoch :96
+2018-10-19 10:43:22,082 - InfoLog - INFO - Train: [0/462] | Time: 632m 16s | loc_loss: 0.6465 | cls_loss:1.5415 | Loss: 2.1879
+2018-10-19 10:44:36,436 - InfoLog - INFO - Train: [100/462] | Time: 633m 30s | loc_loss: 0.5343 | cls_loss:1.5720 | Loss: 2.3016
+2018-10-19 10:45:54,468 - InfoLog - INFO - Train: [200/462] | Time: 634m 48s | loc_loss: 0.8272 | cls_loss:1.9892 | Loss: 2.2726
+2018-10-19 10:47:25,091 - InfoLog - INFO - Train: [300/462] | Time: 636m 19s | loc_loss: 0.6287 | cls_loss:1.5994 | Loss: 2.2695
+2018-10-19 10:48:46,878 - InfoLog - INFO - Train: [400/462] | Time: 637m 40s | loc_loss: 0.7474 | cls_loss:1.5613 | Loss: 2.2608
+2018-10-19 10:49:31,368 - InfoLog - INFO - Test starts...
+2018-10-19 10:50:02,284 - InfoLog - INFO - Test: [103/104] | Time: 638m 56s | loc_loss: 1.0287 | cls_loss:2.9275 | Loss: 3.1007
+2018-10-19 10:50:02,284 - InfoLog - INFO - Epoch :97
+2018-10-19 10:50:10,412 - InfoLog - INFO - Train: [0/462] | Time: 639m 4s | loc_loss: 0.5708 | cls_loss:1.6900 | Loss: 2.2608
+2018-10-19 10:51:42,829 - InfoLog - INFO - Train: [100/462] | Time: 640m 36s | loc_loss: 0.8064 | cls_loss:1.8572 | Loss: 2.2802
+2018-10-19 10:53:18,462 - InfoLog - INFO - Train: [200/462] | Time: 642m 12s | loc_loss: 0.6556 | cls_loss:1.5509 | Loss: 2.2619
+2018-10-19 10:54:57,834 - InfoLog - INFO - Train: [300/462] | Time: 643m 51s | loc_loss: 0.6907 | cls_loss:1.6640 | Loss: 2.2732
+2018-10-19 10:56:35,098 - InfoLog - INFO - Train: [400/462] | Time: 645m 29s | loc_loss: 0.7675 | cls_loss:2.0174 | Loss: 2.2737
+2018-10-19 10:57:30,557 - InfoLog - INFO - Test starts...
+2018-10-19 10:58:08,608 - InfoLog - INFO - Test: [103/104] | Time: 647m 2s | loc_loss: 0.9972 | cls_loss:2.9771 | Loss: 3.0926
+2018-10-19 10:58:08,609 - InfoLog - INFO - Epoch :98
+2018-10-19 10:58:19,005 - InfoLog - INFO - Train: [0/462] | Time: 647m 12s | loc_loss: 0.6714 | cls_loss:1.7712 | Loss: 2.4426
+2018-10-19 10:59:54,739 - InfoLog - INFO - Train: [100/462] | Time: 648m 48s | loc_loss: 0.8198 | cls_loss:1.9485 | Loss: 2.2377
+2018-10-19 11:01:15,383 - InfoLog - INFO - Train: [200/462] | Time: 650m 9s | loc_loss: 0.6800 | cls_loss:1.5994 | Loss: 2.2353
+2018-10-19 11:02:31,746 - InfoLog - INFO - Train: [300/462] | Time: 651m 25s | loc_loss: 0.6038 | cls_loss:1.5849 | Loss: 2.2296
+2018-10-19 11:03:50,830 - InfoLog - INFO - Train: [400/462] | Time: 652m 44s | loc_loss: 0.7013 | cls_loss:1.5590 | Loss: 2.2306
+2018-10-19 11:04:37,292 - InfoLog - INFO - Test starts...
+2018-10-19 11:05:08,366 - InfoLog - INFO - Test: [103/104] | Time: 654m 2s | loc_loss: 1.0236 | cls_loss:2.7710 | Loss: 3.0861
+2018-10-19 11:05:08,366 - InfoLog - INFO - Epoch :99
+2018-10-19 11:05:15,544 - InfoLog - INFO - Train: [0/462] | Time: 654m 9s | loc_loss: 0.4620 | cls_loss:1.3756 | Loss: 1.8376
+2018-10-19 11:06:34,156 - InfoLog - INFO - Train: [100/462] | Time: 655m 28s | loc_loss: 0.7648 | cls_loss:1.7942 | Loss: 2.2368
+2018-10-19 11:07:53,828 - InfoLog - INFO - Train: [200/462] | Time: 656m 47s | loc_loss: 0.7098 | cls_loss:1.7077 | Loss: 2.2229
