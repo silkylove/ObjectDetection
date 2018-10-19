@@ -14,8 +14,6 @@ from datasets import ObjDetDataset
 from evaluations.voc_eval import voc_eval
 from models.fpnssd import FPNSSD512, SSDBboxCoder
 
-from PIL import Image
-
 gpuid = 3
 
 print('Loading model..')
