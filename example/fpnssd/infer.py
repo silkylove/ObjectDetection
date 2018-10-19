@@ -20,9 +20,10 @@ from PIL import Image
 def main(args):
     print('Loading fpnssd model...')
     net = FPNSSD512(num_classes=21).cuda(3)
-    # net = nn.DataParallel(net, [3])
-    # net.load_state_dict(torch.load('./checkpoint/ckpt.pt')['net'])
-    net.load_state_dict(torch.load('./fpnssd512_20_trained.pth'))
+    box_coder = SSDBboxCoder(net)
+    net = nn.DataParallel(net, [3])
+    net.load_state_dict(torch.load('./checkpoint/ckpt.pt')['net'])
+    # net.load_state_dict(torch.load('./fpnssd512_20_trained.pth'))
     # net.load_state_dict(torch.load(args[1])['net'])
     net.eval()
 
@@ -42,8 +43,6 @@ def main(args):
     loc_preds, cls_preds = net(x.unsqueeze(0))
 
     print('Decoding...')
-    box_coder = SSDBboxCoder(net)
-    # box_coder.default_boxes = box_coder.default_boxes.cuda(3)
     loc_preds = loc_preds.squeeze().cpu()
     cls_preds = F.softmax(cls_preds.squeeze().cpu(), dim=1)
     boxes, labels, scores = box_coder.decode(loc_preds, cls_preds)

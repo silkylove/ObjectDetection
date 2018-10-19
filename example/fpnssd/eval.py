@@ -16,11 +16,15 @@ from models.fpnssd import FPNSSD512, SSDBboxCoder
 
 from PIL import Image
 
+gpuid = 3
+
 print('Loading model..')
-net = FPNSSD512(num_classes=21).cuda(1)
-# net = nn.DataParallel(net, [3])
-# net.load_state_dict(torch.load('./checkpoint/ckpt.pt')['net'])
-net.load_state_dict(torch.load('./fpnssd512_20_trained.pth'))
+net = FPNSSD512(num_classes=21).cuda(gpuid)
+box_coder = SSDBboxCoder(net)
+
+net = nn.DataParallel(net, [gpuid])
+net.load_state_dict(torch.load('./checkpoint/ckpt.pt')['net'])
+# net.load_state_dict(torch.load('./fpnssd512_20_trained.pth'))
 net.eval()
 
 print('Preparing dataset..')
@@ -36,8 +40,6 @@ def transform(img, boxes, labels):
     ])(img)
     return img, boxes, labels
 
-
-box_coder = SSDBboxCoder(net)
 
 dataset = ObjDetDataset(root='/home/yhuangcc/data/voc(07+12)/JPEGImages/', \
                         list_file='/home/yhuangcc/ObjectDetection/datasets/voc/voc07_test.txt',
@@ -67,7 +69,7 @@ def eval(net, dataloader):
             gt_boxes.append(box_targets.squeeze(0))
             gt_labels.append(label_targets.squeeze(0))
 
-            loc_preds, cls_preds = net(inputs.cuda(1))
+            loc_preds, cls_preds = net(inputs.cuda(gpuid))
             box_preds, label_preds, score_preds = box_coder.decode(
                 loc_preds.cpu().data.squeeze(),
                 F.softmax(cls_preds.squeeze(), dim=1).cpu().data,
@@ -81,6 +83,7 @@ def eval(net, dataloader):
         pred_boxes, pred_labels, pred_scores,
         gt_boxes, gt_labels, gt_difficults,
         iou_thresh=0.5, use_07_metric=True)
+
 
 print('Start to eval...')
 start = time.time()

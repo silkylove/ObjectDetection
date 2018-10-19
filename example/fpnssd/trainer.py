@@ -9,7 +9,7 @@ import numpy as np
 import torch
 from torch import nn, optim
 from torch.utils.data import DataLoader
-from torchvision import transforms, models
+from torchvision import transforms
 
 from models.fpnssd import FPNSSD512, SSDBboxCoder
 from loss import SSDLoss
