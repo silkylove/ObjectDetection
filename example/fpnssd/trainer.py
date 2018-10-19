@@ -45,7 +45,6 @@ class Trainer:
         if not os.path.exists(self.ckpt_dir):
             os.makedirs(self.ckpt_dir)
 
-
         self.datasets = {'train': ObjDetDataset(config.img_root, config.train_list, self.transform(train=True)),
                          'test': ObjDetDataset(config.img_root, config.test_list, self.transform(train=False))}
 
@@ -64,9 +63,9 @@ class Trainer:
             self.net = nn.DataParallel(self.net)
 
         self.criterion = SSDLoss(self.num_classes)
-        self.optimizer = optim.SGD(self.net.parameters(), lr=self.lr, momentum=0.9, weight_decay=5e-4)
-        # self.optimizer = optim.Adam(self.net.parameters(), lr=self.lr, betas=(0.5, 0.99))
+        # self.optimizer = optim.SGD(self.net.parameters(), lr=self.lr, momentum=0.9, weight_decay=5e-4)
         # with adam, the lr should be started from 1e-4
+        self.optimizer = optim.Adam(self.net.parameters(), lr=self.lr, betas=(0.5, 0.99))
         self.lr_decay = optim.lr_scheduler.MultiStepLR(self.optimizer, milestones=config.lr_decay,
                                                        gamma=config.lr_decay_rate)
 
@@ -100,6 +99,8 @@ class Trainer:
                            'lr_decay': self.lr_decay.state_dict()})
 
     def train(self):
+        loc_losses = AverageMeter()
+        cls_losses = AverageMeter()
         losses = AverageMeter()
         self.net.train()
         for i, (imgs, loc_targets, cls_targets) in enumerate(self.loaders['train']):
@@ -115,15 +116,19 @@ class Trainer:
             loss.backward()
             self.optimizer.step()
 
+            loc_losses.update(loc_loss.item())
+            cls_losses.update(cls_loss.item())
             losses.update(loss.item())
             if i % 100 == 0:
                 logger.info(f"Train: [{i}/{len(self.loaders['train'])}] | "
                             f"Time: {timeSince(self.start_time)} | "
-                            f"loc_loss: {loc_loss.item():.4f} | "
-                            f"cls_loss:{cls_loss.item():.4f} | "
+                            f"loc_loss: {loc_losses.avg:.4f} | "
+                            f"cls_loss:{cls_losses.avg:.4f} | "
                             f"Loss: {losses.avg:.4f}")
 
     def test(self):
+        loc_losses = AverageMeter()
+        cls_losses = AverageMeter()
         losses = AverageMeter()
         self.net.eval()
         with torch.no_grad():
@@ -136,12 +141,14 @@ class Trainer:
                 loc_loss, cls_loss = self.criterion(loc_preds, loc_targets, cls_preds, cls_targets)
                 loss = loc_loss + cls_loss
 
-                losses.update(loss.item(), imgs.size()[0])
+                loc_losses.update(loc_loss.item())
+                cls_losses.update(cls_loss.item())
+                losses.update(loss.item())
 
             logger.info(f"Test: [{i}/{len(self.loaders['test'])}] | "
                         f"Time: {timeSince(self.start_time)} | "
-                        f"loc_loss: {loc_loss.item():.4f} | "
-                        f"cls_loss:{cls_loss.item():.4f} | "
+                        f"loc_loss: {loc_losses.avg:.4f} | "
+                        f"cls_loss:{cls_losses.avg:.4f} | "
                         f"Loss: {losses.avg:.4f}")
         return losses.avg
 
