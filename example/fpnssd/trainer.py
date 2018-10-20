@@ -65,7 +65,7 @@ class Trainer:
         self.criterion = SSDLoss(self.num_classes)
         self.optimizer = optim.SGD(self.net.parameters(), lr=self.lr, momentum=0.9, weight_decay=1e-4)
         # with adam, the lr should be started from 1e-4
-        # self.optimizer = optim.Adam(self.net.parameters(), lr=self.lr, betas=(0.5, 0.99))
+        # self.optimizer = optim.Adam(self.net.parameters(), lr=self.lr, betas=(0.5, 0.99),weight_decay=1e-4)
         self.lr_decay = optim.lr_scheduler.MultiStepLR(self.optimizer, milestones=config.lr_decay,
                                                        gamma=config.lr_decay_rate)
 
