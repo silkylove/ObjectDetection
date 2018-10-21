@@ -1,0 +1,22 @@
+ssh://yhuangcc@gpu3.math.ust.hk:22/home/yhuangcc/.conda/envs/pytorch/bin/python -u /home/yhuangcc/ObjectDetection/example/fpnssd/eval.py
+Loading model..
+Preparing dataset..
+Start to eval...
+0/4952
+500/4952
+1000/4952
+1500/4952
+2000/4952
+2500/4952
+3000/4952
+3500/4952
+4000/4952
+4500/4952
+ap [0.80889439 0.84476956 0.8031477  0.65158226 0.25618585 0.8636391
+ 0.86724039 0.88306732 0.57400776 0.84747875 0.71306511 0.84947573
+ 0.86007798 0.85255659 0.70736951 0.50136219 0.80835294 0.76494248
+ 0.84489264 0.79115449]
+map 0.7546631367554814
+eval ends... consuming time 521.2114s
+
+Process finished with exit code 0
