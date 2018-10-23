@@ -4,7 +4,7 @@ import math
 import torch
 import itertools
 
-from utils.bbox import bbox_nms, bbox_iou, change_bbox_order
+from utils.bbox import bbox_nms, bbox_iou, change_bbox_order, cython_nms_o
 
 
 class SSDBboxCoder:
@@ -82,7 +82,7 @@ class SSDBboxCoder:
             box = box_preds[mask]
             score = score[mask]
 
-            keep = bbox_nms(box, score, nms_thresh)
+            keep = cython_nms_o(box, score, nms_thresh)
             boxes.append(box[keep])
             labels.append(torch.empty_like(keep).fill_(i))
             scores.append(score[keep])

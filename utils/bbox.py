@@ -3,7 +3,7 @@ import torch
 import numpy as np
 
 
-#TODO: change to be cython with numpy
+# TODO: change to be cython with numpy
 def change_bbox_order(boxes, order):
     '''
     Change box order between (xmin,ymin,xmax,ymax) and (xcenter,ycenter,width,height).
@@ -63,7 +63,8 @@ def bbox_iou(box1, box2):
     return iou
 
 
-def bbox_nms(boxes, scores, threshold=0.5):
+# very slow
+def bbox_nms_torch(boxes, scores, threshold=0.5):
     '''
     Non maximum suppression
     :param boxes: (tensor) [N,4]
@@ -72,6 +73,11 @@ def bbox_nms(boxes, scores, threshold=0.5):
     :return:
         keep: (tensor) selected indices
     '''
+    x1 = boxes[:, 0]
+    y1 = boxes[:, 1]
+    x2 = boxes[:, 2]
+    y2 = boxes[:, 3]
+    areas = (x2 - x1) * (y2 - y1)
     _, order = scores.sort(0, descending=True)
 
     keep = []
@@ -82,7 +88,18 @@ def bbox_nms(boxes, scores, threshold=0.5):
             break
         i = order[0]
         keep.append(i)
-        overlap = bbox_iou(boxes[order[1:]], boxes[i]).squeeze()
+
+        xx1 = x1[order[1:]].clamp(min=x1[i].item())
+        yy1 = y1[order[1:]].clamp(min=y1[i].item())
+        xx2 = x2[order[1:]].clamp(max=x2[i].item())
+        yy2 = y2[order[1:]].clamp(max=y2[i].item())
+
+        w = (xx2 - xx1).clamp(min=0)
+        h = (yy2 - yy1).clamp(min=0)
+        inter = w * h
+
+        overlap = inter / (areas[i] + areas[order[1:]] - inter)
+
         ids = (overlap < threshold).nonzero().squeeze()
         if ids.numel() == 0:
             break
@@ -90,3 +107,72 @@ def bbox_nms(boxes, scores, threshold=0.5):
     return torch.LongTensor(keep)
 
 
+def bbox_nms(boxes, scores, threshold=0.5):
+    '''
+    Non maximum suppression
+    :param boxes: (tensor) [N,4]
+    :param scores: (tensor) [N,]
+    :param threshold: (float)
+    :return:
+        keep: (tensor) selected indices
+    '''
+    is_torch = False
+    if not isinstance(boxes, np.ndarray):
+        boxes = boxes.cpu().detach().numpy()
+        scores = scores.cpu().detach().numpy()
+        is_torch = True
+    x1 = boxes[:, 0]
+    y1 = boxes[:, 1]
+    x2 = boxes[:, 2]
+    y2 = boxes[:, 3]
+    areas = (x2 - x1) * (y2 - y1)
+    order = scores.argsort()[::-1]
+
+    keep = []
+    while len(order) > 0:
+        if len(order) == 1:
+            i = order.item()
+            keep.append(i)
+            break
+        i = order[0]
+        keep.append(i)
+
+        xx1 = x1[order[1:]].clip(min=x1[i])
+        yy1 = y1[order[1:]].clip(min=y1[i])
+        xx2 = x2[order[1:]].clip(max=x2[i])
+        yy2 = y2[order[1:]].clip(max=y2[i])
+
+        w = (xx2 - xx1).clip(min=0)
+        h = (yy2 - yy1).clip(min=0)
+        inter = w * h
+
+        overlap = inter / (areas[i] + areas[order[1:]] - inter)
+
+        ids = np.where(overlap < threshold)[0]
+        if len(ids) == 0:
+            break
+        order = order[ids + 1]
+    return keep if not is_torch else torch.LongTensor(keep)
+
+
+import extensions.nms.src.cython_nms as cython_nms
+
+
+def cython_nms_o(bboxes, scores=None, nms_threshold=0.5):
+    """Apply classic DPM-style greedy NMS."""
+    is_torch = False
+    if not isinstance(bboxes, np.ndarray):
+        bboxes = bboxes.cpu().detach().numpy()
+        scores = scores.cpu().detach().numpy()
+
+        is_torch = True
+
+    bboxes = bboxes.reshape(-1, 4)
+    scores = scores.reshape(-1, 1)
+
+    dets = np.concatenate((bboxes, scores), 1)
+    if dets.shape[0] == 0:
+        return []
+
+    keep = cython_nms.nms(dets, nms_threshold)
+    return keep if not is_torch else torch.tensor(keep).long()
