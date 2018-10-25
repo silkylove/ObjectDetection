@@ -1,20 +1,10 @@
 # -*- coding: utf-8 -*-
 import torch
 import torch.nn as nn
-from torch.utils import model_zoo
 import math
 from collections import OrderedDict
 
-try:
-    from urllib import urlretrieve
-except ImportError:
-    from urllib.request import urlretrieve
-
-model_urls = {
-    'darknet21': 'https://download.pytorch.org/models/darknet21_weights_pytorch.pth',
-    # https://doc-14-24-docs.googleusercontent.com/docs/securesc/jd10fi3vf237i5lf9m7fitl9v9pmlbij/to4tmqm3mdjsfr268jmh6mhigsvaldeh/1540281600000/08181461995943596939/07422024102799811004/1VYwHUznM3jLD7ftmOSCHnpkVpBJcFIOA?e=download&nonce=oob384oc68cs0&user=07422024102799811004&hash=0riqqa7lgmpvi5453hmrvthps96kfipq
-    'darknet53': 'https://download.pytorch.org/models/darknet21_weights_pytorch.pth',
-}
+__all__ = ['darknet21', 'darknet53']
 
 
 class BasicBlock(nn.Module):
@@ -79,7 +69,6 @@ class DarkNet(nn.Module):
         self.inplanes = planes[1]
         for i in range(0, blocks):
             layers.append(("residual_{}".format(i), BasicBlock(self.inplanes, planes)))
-
         return nn.Sequential(OrderedDict(layers))
 
     def forward(self, x):
@@ -89,42 +78,32 @@ class DarkNet(nn.Module):
 
         x = self.layer1(x)
         x = self.layer2(x)
-        x = self.layer3(x)
-        x = self.layer4(x)
-        x = self.layer5(x)
+        out3 = self.layer3(x)
+        out4 = self.layer4(out3)
+        out5 = self.layer5(out4)
 
-        return x
+        return out3, out4, out5
 
 
-class DarkNetModels(object):
+def darknet21(pretrained):
+    """Constructs a darknet-21 model.
+    """
+    model = DarkNet([1, 1, 2, 2, 1])
+    if pretrained:
+        if isinstance(pretrained, str):
+            model.load_state_dict(torch.load(pretrained))
+        else:
+            raise Exception("darknet request a pretrained path. got [{}]".format(pretrained))
+    return model
 
-    def __init__(self, pretrained=True):
-        self.pretrained = pretrained
 
-    def darknet21(self):
-        """Constructs a darknet-21 model.
-        """
-        model = DarkNet([1, 1, 2, 2, 1])
-        if self.pretrained:
-            pretrained_dict = model_zoo.load_url(model_urls['darknet21'])
-
-            model_dict = model.state_dict()
-            matched_dict = {k: v for k, v in pretrained_dict.items() if k in model_dict}
-            model_dict.update(matched_dict)
-            model.load_state_dict(model_dict)
-
-        return model
-
-    def darknet53(self):
-        """Constructs a darknet-53 model.
-        """
-        model = DarkNet([1, 2, 8, 8, 4])
-        if self.pretrained:
-            pretrained_dict = model_zoo.load_url(model_urls['darknet53'])
-
-            model_dict = model.state_dict()
-            matched_dict = {k: v for k, v in pretrained_dict.items() if k in model_dict}
-            model_dict.update(matched_dict)
-            model.load_state_dict(model_dict)
-
-        return model
+def darknet53(pretrained):
+    """Constructs a darknet-53 model.
+    """
+    model = DarkNet([1, 2, 8, 8, 4])
+    if pretrained:
+        if isinstance(pretrained, str):
+            model.load_state_dict(torch.load(pretrained))
+        else:
+            raise Exception("darknet request a pretrained path. got [{}]".format(pretrained))
+    return model

@@ -69,6 +69,7 @@ class SSDBboxCoder:
         xy = loc_preds[:, :2] * self.variances[0] * self.default_boxes[:, 2:] + self.default_boxes[:, :2]
         wh = torch.exp(loc_preds[:, 2:] * self.variances[1]) * self.default_boxes[:, 2:]
         box_preds = torch.cat([xy - wh / 2, xy + wh / 2], 1)
+        box_preds = box_preds.clamp(min=0, max=max(self.steps) * min(self.fm_sizes))
 
         boxes = []
         labels = []
@@ -82,7 +83,7 @@ class SSDBboxCoder:
             box = box_preds[mask]
             score = score[mask]
 
-            keep = cython_nms_o(box, score, nms_thresh)
+            keep = bbox_nms(box, score, nms_thresh)
             boxes.append(box[keep])
             labels.append(torch.empty_like(keep).fill_(i))
             scores.append(score[keep])
